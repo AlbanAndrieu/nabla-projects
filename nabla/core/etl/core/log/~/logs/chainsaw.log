@@ -1,0 +1,60 @@
+<log4j:event logger="mylogger" timestamp="1408168551324" level="DEBUG" thread="main">
+<log4j:message><![CDATA[Common logger is enable]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551328" level="DEBUG" thread="main">
+<log4j:message><![CDATA[rootLogger 1 - DEBUG]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551328" level="INFO" thread="main">
+<log4j:message><![CDATA[rootLogger 1 - INFO]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551328" level="WARN" thread="main">
+<log4j:message><![CDATA[rootLogger 1 - WARNING]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="ERROR" thread="main">
+<log4j:message><![CDATA[rootLogger 1 - ERROR]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="INFO" thread="main">
+<log4j:message><![CDATA[rootLogger 2 - INFO]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="WARN" thread="main">
+<log4j:message><![CDATA[rootLogger 2 - WARNING]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="ERROR" thread="main">
+<log4j:message><![CDATA[rootLogger 2 - ERROR]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="WARN" thread="main">
+<log4j:message><![CDATA[rootLogger 4 - WARNING]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="ERROR" thread="main">
+<log4j:message><![CDATA[rootLogger 4 - ERROR]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="ERROR" thread="main">
+<log4j:message><![CDATA[rootLogger 5 - ERROR]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.nabla.project.application.core.log.LogTest" timestamp="1408168551329" level="FATAL" thread="main">
+<log4j:message><![CDATA[Waiting...]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="mylogger" timestamp="1408168551830" level="INFO" thread="main">
+<log4j:message><![CDATA[mylogger 4 - INFO]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="mylogger" timestamp="1408168551830" level="WARN" thread="main">
+<log4j:message><![CDATA[mylogger 4 - WARNING]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="mylogger" timestamp="1408168551830" level="ERROR" thread="main">
+<log4j:message><![CDATA[mylogger 4 - ERROR]]></log4j:message>
+</log4j:event>
+

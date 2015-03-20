@@ -1,0 +1,6 @@
+2014-06-26 16:02:59,855 ERROR [mylogger] - mylogger 4 - ERROR
+2014-06-26 16:02:59,857 FATAL [mylogger] - mylogger 5 - FATAL
+2014-06-26 16:15:42,095 ERROR [mylogger] - mylogger 4 - ERROR
+2014-06-26 16:15:42,098 FATAL [mylogger] - mylogger 5 - FATAL
+2014-08-16 07:55:56,917 ERROR [mylogger] - mylogger 4 - ERROR
+2014-08-16 07:55:56,944 FATAL [mylogger] - mylogger 5 - FATAL
