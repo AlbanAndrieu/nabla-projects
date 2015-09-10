@@ -132,5 +132,4 @@ public class PipeListenerContainerCounterTest extends TestCase
         assertEquals(nbTests, pipeContainerCounter.getCounter());
 
     }
-
 }

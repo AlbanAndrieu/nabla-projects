@@ -1,9 +1,0 @@
-2014-06-26 16:02:59 [ main:5572 ] - [ ERROR ] mylogger 4 - ERROR
-2014-06-26 16:02:59 [ main:5574 ] - [ FATAL ] mylogger 5 - FATAL
-2014-06-26 16:02:59 [ main:5574 ] - [ FATAL ] rootLogger 5 - FATAL
-2014-06-26 16:15:42 [ main:5562 ] - [ ERROR ] mylogger 4 - ERROR
-2014-06-26 16:15:42 [ main:5565 ] - [ FATAL ] mylogger 5 - FATAL
-2014-06-26 16:15:42 [ main:5565 ] - [ FATAL ] rootLogger 5 - FATAL
-2014-08-16 07:55:56 [ main:5593 ] - [ ERROR ] mylogger 4 - ERROR
-2014-08-16 07:55:56 [ main:5620 ] - [ FATAL ] mylogger 5 - FATAL
-2014-08-16 07:55:56 [ main:5621 ] - [ FATAL ] rootLogger 5 - FATAL

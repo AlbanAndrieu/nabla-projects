@@ -21,12 +21,18 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 		</dependency>
-		<!-- TODO remove old spring version -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<!--
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
 			<scope>compile</scope>
 		</dependency>
+		-->
 	</dependencies>
 
     	<build>
@@ -41,7 +47,7 @@
 		        </archive>
 		      </configuration>
 		    </plugin>
-		    
+
 		    <plugin>
         	        <groupId>org.apache.felix</groupId>
         	        <artifactId>maven-bundle-plugin</artifactId>

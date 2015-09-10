@@ -22,7 +22,7 @@ public class ControlFileGenerator
 
     public static void TradeGenerator(final String fileName, final String id) throws Exception
     {
-        assert (fileName != null);
+        assert(fileName != null);
 
         if ( // Debug
         logger.isDebugEnabled())

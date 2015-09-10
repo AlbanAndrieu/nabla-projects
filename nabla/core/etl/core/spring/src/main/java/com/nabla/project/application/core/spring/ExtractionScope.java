@@ -36,12 +36,10 @@ package com.nabla.project.application.core.spring;
 import com.nabla.project.application.api.config.RequestId;
 
 import org.apache.log4j.Logger;
-
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.config.Scope;
 
 import java.lang.management.ManagementFactory;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -249,5 +247,11 @@ public class ExtractionScope implements Scope
                                                }
 
                                            };
+
+	@Override
+	public Object resolveContextualObject(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
