@@ -16,12 +16,12 @@
         <description>Proof of concept : SOA framework for generic services</description>        
         <url>${JOB_URL}</url>
 
-        <scm>
-                <connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/project</connection>
-                <developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/project</developerConnection>
-                <url>https://alban.googlecode.com/svn/${project.svn.path}/project</url>
-                <tag>HEAD</tag>
-        </scm>
+	<scm>
+		<connection>scm:git:git://github.com/AlbanAndrieu/nabla-projects.git</connection>
+		<developerConnection>scm:git:git@github.com:AlbanAndrieu/nabla-projects.git</developerConnection>
+		<url>https://github.com/AlbanAndrieu/nabla-projects</url>
+		<tag>HEAD</tag>			
+	</scm>
 
         <profiles>
                 <profile>
