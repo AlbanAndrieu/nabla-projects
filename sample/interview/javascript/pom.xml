@@ -100,34 +100,6 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-		<pluginManagement>
-			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>com.mobilvox.ossi.mojo</groupId>
-										<artifactId>maven-js-plugin</artifactId>
-										<versionRange>[${maven.js.plugin.version},)</versionRange>
-										<goals>
-											<goal>compress-custom</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore></ignore>
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 
 	<reporting>
@@ -136,7 +108,7 @@
 			<plugin>
 				<groupId>gr.abiss.mvn.plugins</groupId>
 				<artifactId>maven-jstools-plugin</artifactId>
-				<version>${maven.jstools.plugin.version}</version>	
+				<version>${maven.jstools.plugin.version}</version>
 				<!--<inherited>false</inherited> -->
 				<configuration>
 					<!-- the default is src/main/js -->
