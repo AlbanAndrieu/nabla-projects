@@ -7,7 +7,7 @@
    </properties>
   <body>
     <section name="Attributs des utilisateurs (extrait de la spéfication JSR168)">
-    
+
         <subsection name="Portlet Specification PFD draft, version 1.0 (8/26/2003) 125">
 
             <p>
@@ -28,7 +28,7 @@
                Services for Remote Portlets Technical Committee.
             </p>
         </subsection>
-        
+
         <subsection name="Attribute Name">
             <p>
 <pre>
@@ -109,6 +109,6 @@ user.business-info.online.uri
          GMT.
       </p>
      </subsection>
-   </section>     
+   </section>
   </body>
 </document>

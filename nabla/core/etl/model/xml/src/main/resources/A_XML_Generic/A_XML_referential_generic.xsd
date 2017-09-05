@@ -848,11 +848,11 @@
 		<xs:documentation>************************************************************
 		</xs:documentation>
 	</xs:annotation>
-	<!--xs:element name="country" type="countryScheme"> <xs:annotation> <xs:documentation> 
-		<definition>Country of the entity. This is the Country ISO A3 code.</definition> 
+	<!--xs:element name="country" type="countryScheme"> <xs:annotation> <xs:documentation>
+		<definition>Country of the entity. This is the Country ISO A3 code.</definition>
 		</xs:documentation> </xs:annotation> </xs:element -->
-	<!--xs:element name="currency" type="currencyScheme"> <xs:annotation> <xs:documentation> 
-		<definition>Currency of the entity</definition> </xs:documentation> </xs:annotation> 
+	<!--xs:element name="currency" type="currencyScheme"> <xs:annotation> <xs:documentation>
+		<definition>Currency of the entity</definition> </xs:documentation> </xs:annotation>
 		</xs:element -->
 	<xs:element name="cityName" type="xs:string">
 		<xs:annotation>

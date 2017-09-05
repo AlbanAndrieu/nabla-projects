@@ -21,7 +21,7 @@
 		schemaLocation="../A_XML_Trade/A_XML_trade.xsd" />
 	<xs:import namespace="urn:nabla:A_XML_ProductHeader:1_0_0"
 		schemaLocation="../A_XML_ProductHeader/A_XML_productHeader.xsd" />
-	<!-- <xs:import namespace="urn:nabla:A_XML_FinancialInfo:1_0_0" schemaLocation="../A_XML_FinancialInfo/A_XML_financialInfo.xsd" 
+	<!-- <xs:import namespace="urn:nabla:A_XML_FinancialInfo:1_0_0" schemaLocation="../A_XML_FinancialInfo/A_XML_financialInfo.xsd"
 		/> -->
 	<xs:import namespace="urn:nabla:A_XML_TradingParty:1_0_0"
 		schemaLocation="../A_XML_TradingParty/A_XML_tradingParty.xsd" />

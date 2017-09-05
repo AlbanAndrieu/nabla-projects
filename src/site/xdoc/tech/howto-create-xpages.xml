@@ -10,11 +10,11 @@
         <subsection name="The extended Nabla Pages(XPage)">
             <p>
                In Nabla, we can distinguish two types of page :
-               
+
             </p>
             <p>
                <ul>
-                  <li>the classic pages assembled by portlets. 
+                  <li>the classic pages assembled by portlets.
                       It concerns most pages on the website.
                   </li>
                   <li>Extended Pages which have a particular management scheme
@@ -37,20 +37,20 @@
             <p>
                 The applications are thus completely binded to the site. They
                 consists of menus, banners, style sheets of the portal.
-                Their graphical appearance will also change during a website upgrade 
+                Their graphical appearance will also change during a website upgrade
                 thus no additional work is needed.
             </p>
-            
+
         </subsection>
         <subsection name="Technical description">
             <p>
                An extended page can be distinguished when the url of the page
                has a <b>page</b> parameter and not  <b>id_page</b> as classical pages
                of the site.
-            
+
             </p>
             <p>
-               
+
                For exemple, <code>http://myhost/nabla/jsp/site/Portal.jsp?page=map</code> to
                obtain the site map.
             </p>
@@ -62,10 +62,10 @@
                form : <b>&lt;xpage&gt;</b></i>.
             </p>
         </subsection>
-        
+
         <subsection name="JAVA treatment">
            <p>
-              When the parameter <b>&lt;page&gt;</b> is detected in the 
+              When the parameter <b>&lt;page&gt;</b> is detected in the
               request, the class <b>com.nabla.project.portal.web.PortalJspBean</b>
               (entry page of Nabla) calls to the method :
               </p>
@@ -74,17 +74,17 @@
 <pre>
 public String getPage( HttpServletRequest request , int nMode )</pre>
                  </div>
-                  of 
+                  of
                     <code>com.nabla.project.portal.service.XPageAppService</code> class.
-                    
-                    The service will look for the plugin whose name is specified 
-                    in the parameter <b>page</b> in the request and fetch it from 
+
+                    The service will look for the plugin whose name is specified
+                    in the parameter <b>page</b> in the request and fetch it from
                     an instance of the <code>XPageApp</code> class.
-                   
+
                </p>
                <p>
                   All the XPageApp must be implement the interface :
-                  
+
                   <code>com.nabla.project.portal.web.xpages.XPageApplication</code>.
                </p>
                <p>
@@ -96,8 +96,8 @@ public String getPage( HttpServletRequest request , int nMode )</pre>
 public String getContent( HttpServletRequest request, int nMode, Plugin plugin );</pre>
                   </div>
                </p>
-               <p>  
-                   which returns the page content relative to the parameters contained 
+               <p>
+                   which returns the page content relative to the parameters contained
                    in the request, of mode (normal or administration) and
                    the instance of the plugin for which it was instanciated.
                  (The same class can be instanciated in different contexts).
@@ -115,10 +115,10 @@ public String getContent( HttpServletRequest request, int nMode, Plugin plugin )
                   </ul>
                </p>
            </subsection>
-           
+
            <subsection name="JSP">
               <p>
-                 If the XPageApp developed needs an additional processing JSP 
+                 If the XPageApp developed needs an additional processing JSP
                  (such as sending a message to the contact page), the JSP
                  should be placed in the folder :
                    <code>portal/jsp/site/plugins/&lt;myplugin&gt;</code>. The only
@@ -133,13 +133,13 @@ public String getContent( HttpServletRequest request, int nMode, Plugin plugin )
                   </div>
               </p>
            </subsection>
-           
+
            <subsection name="Access to the page">
               <p>
                  There is no automatic links towards the XPages on Nabla.
               </p>
               <p>
-                 Normally, the XPages are accessible from the menu situated on 
+                 Normally, the XPages are accessible from the menu situated on
                  the banner.
               </p>
               <p>
@@ -150,30 +150,30 @@ public String getContent( HttpServletRequest request, int nMode, Plugin plugin )
                  <code>WEB-INF/templates/skin/site/page_menu_tools.html</code>.
               </p>
               <p>
-                  A LinkService allows to insert from a Wysiwyg HTML editor 
+                  A LinkService allows to insert from a Wysiwyg HTML editor
                   an article or an HTML portlet, alink towards XPages on the web site.
               </p>
-              
+
           </subsection>
-          
+
            <subsection name="Page Administration">
               <p>
                  Administrative functions are generally needed to manage the
                  backoffice fetaures.
               </p>
               <p>
-                 To create for the same plugin, administrative functions 
+                 To create for the same plugin, administrative functions
                   [ <a href=
                  "howto-create-admin-features.html">HOWTO - Create functions
                  d'administration</a> ]
               </p>
-             
+
            </subsection>
-       
+
            <subsection name="XPage definition in plugin configuration">
                <p>
                    The application must be declared in the XML file of the plugin as follows :
-  
+
                    <div class="source">
                        <pre>
     &lt;!-- Application XPage --&gt;
@@ -185,7 +185,7 @@ public String getContent( HttpServletRequest request, int nMode, Plugin plugin )
                    </div>
                </p>
            </subsection>
-           
+
            <subsection name="Notice">
                <p>
                   The XPages are not indexed by the Lucene search engine.They
@@ -195,5 +195,3 @@ public String getContent( HttpServletRequest request, int nMode, Plugin plugin )
          </section>
     </body>
 </document>
-
-

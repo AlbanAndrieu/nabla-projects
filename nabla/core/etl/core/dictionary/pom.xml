@@ -6,7 +6,7 @@
                 <artifactId>core</artifactId>
                 <version>1.0</version>
         </parent>
-        
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.nabla.project.core.etl.core..dictionary</groupId>
   <artifactId>dictionary</artifactId>
@@ -34,14 +34,14 @@
 		        </archive>
 		      </configuration>
 		    </plugin>
-		    
+
 		    <plugin>
         	        <groupId>org.apache.felix</groupId>
         	        <artifactId>maven-bundle-plugin</artifactId>
         	    </plugin>
         	</plugins>
         </build>
-        
+
         <properties>
             <bundle.namespace>com.nabla.project.application.api</bundle.namespace>
         </properties>

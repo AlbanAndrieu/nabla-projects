@@ -46,17 +46,17 @@
             </p>
             <p>
                 Default services are declared in <code>nabla.properties</code> file.
-                
+
             </p>
             <p>
-                The plugins can add new PageIncludeServices by adding in their XML file 
-                as shown below :          
+                The plugins can add new PageIncludeServices by adding in their XML file
+                as shown below :
                 <div class="source">
                     <pre>
-&lt;page-include-service&gt;        
-     &lt;page-include-service-name&gt;My Include Service&lt;/page-include-service-name&gt;        
-     &lt;page-include-service-class&gt;com.nabla.project.myplugin.web.MyInclude&lt;/page-include-service-class&gt;        
-&lt;/page-include-service&gt;        
+&lt;page-include-service&gt;
+     &lt;page-include-service-name&gt;My Include Service&lt;/page-include-service-name&gt;
+     &lt;page-include-service-class&gt;com.nabla.project.myplugin.web.MyInclude&lt;/page-include-service-class&gt;
+&lt;/page-include-service&gt;
                    </pre>
                 </div>
             </p>
@@ -74,7 +74,7 @@
 public class MyInclude implements PageInclude
 {
     private static final String BOOKMARK_MY_INCLUDE = "@my_include@";
-    
+
     /**
      * Substitue specific bookmarks in the page template.
      * @param template The page template containing bookmarks to substitute

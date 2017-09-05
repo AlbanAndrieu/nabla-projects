@@ -5,16 +5,16 @@
 	<bean id="defaultAbstractConfigurationMessage" class="com.nabla.project.application.core.spring.AbstractMessageConfig" abstract="true">
 		<property name="queueSize" value="1000"/>
 	</bean>
-	
+
 	<bean id="defaultConfigurationMessage" class="com.nabla.project.application.core.spring.MessageConfig" parent="defaultAbstractConfigurationMessage" lazy-init="true">
 		<property name="validationXmlOutput" value="true"/>
 	</bean>
-	
+
 	<bean id="defaultAbstractConfigurationPipe" class="com.nabla.project.application.core.spring.AbstractPipeConfig" abstract="true">
 		<property name="queueSize" value="1000"/>
 	</bean>
 
 	<bean id="defaultConfigurationPipe" class="com.nabla.project.application.core.spring.PipeConfig" parent="defaultAbstractConfigurationPipe" lazy-init="true"/>
-	
+
 	<bean id="version" class="com.nabla.project.application.core.configuration.Version" />
 </beans>

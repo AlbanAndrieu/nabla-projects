@@ -8,12 +8,12 @@ var DataObject = require("n4/model/DataObject"),
  * @class
  * @namespace n4/metacompany/events
  *
- * @requires EventStatus EventStatus.js  
- */ 
+ * @requires EventStatus EventStatus.js
+ */
 // @memberOf DataObject
 var RepliesStatus = module.exports = Class({
     isa: DataObject,
-    has: 
+    has:
     /** @lends RepliesStatus# */
     {
         /**

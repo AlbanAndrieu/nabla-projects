@@ -33,7 +33,7 @@ public class XMLProductSetTest extends TestCase
 
     /**
      * Common tests on XMLProduct objects
-     * 
+     *
      * @param XMLProduct
      */
     public static void testXMLProduct(XMLProduct XMLProduct)
@@ -60,7 +60,7 @@ public class XMLProductSetTest extends TestCase
 
     /**
      * Specifics tests on Product 2
-     * 
+     *
      * @param XMLProduct
      */
     public static void testXMLProduct2(XMLProduct XMLProduct)
@@ -114,7 +114,7 @@ public class XMLProductSetTest extends TestCase
 
     /**
      * Specifics tests on Product 1
-     * 
+     *
      * @param XMLProduct
      */
     public static void testXMLProduct1(XMLProduct XMLProduct)

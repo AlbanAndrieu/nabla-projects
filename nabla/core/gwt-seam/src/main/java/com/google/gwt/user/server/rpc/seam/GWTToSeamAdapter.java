@@ -18,7 +18,7 @@ import org.jboss.seam.util.EJB;
 
 /**
  * This class adapts GWT RPC mechanism to Seam actions.
- * 
+ *
  * @author Michael Neale
  */
 @Scope(APPLICATION)
@@ -45,7 +45,7 @@ public class GWTToSeamAdapter
 
     /**
      * Call the service.
-     * 
+     *
      * @param serviceIntfName
      * The interface name - this will be the fully qualified name of
      * the remote service interface as understood by GWT. This
@@ -104,7 +104,7 @@ public class GWTToSeamAdapter
     /**
      * Get the method on the class, including walking up the class heirarchy if
      * needed. Methods have to be marked as "@WebRemote" to be allowed.
-     * 
+     *
      * @param methodName
      * @param clz
      * @param paramTypes
@@ -178,7 +178,7 @@ public class GWTToSeamAdapter
 
     /**
      * Only allow methods annotated with
-     * 
+     *
      * @WebRemote for security reasons.
      */
     private boolean isWebRemoteAnnotated(Method method)
@@ -200,7 +200,7 @@ public class GWTToSeamAdapter
      * This is used for returning results to the GWT service endpoint. The class
      * is needed even if the result is null. a void.class responseType is
      * perfectly acceptable.
-     * 
+     *
      * @author Michael Neale
      */
     static class ReturnedObject

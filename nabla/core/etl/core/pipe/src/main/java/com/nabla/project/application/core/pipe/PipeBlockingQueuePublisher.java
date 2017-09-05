@@ -38,7 +38,7 @@ import com.nabla.project.application.api.helpers.PipePublisher;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -51,7 +51,7 @@ public class PipeBlockingQueuePublisher<X> implements PipePublisher<X>
 
     /**
      * Creates a new PipeBlockingQueuePublisher object.
-     * 
+     *
      * @param name DOCUMENT ME!
      * @param requestId DOCUMENT ME!
      */
@@ -64,7 +64,7 @@ public class PipeBlockingQueuePublisher<X> implements PipePublisher<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param t DOCUMENT ME!
      */
     public void publish(X t)

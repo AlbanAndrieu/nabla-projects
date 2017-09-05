@@ -6,8 +6,8 @@
           </title>
       </properties>
       <body>
-	  
-	  
+
+
 		<div id="downloadbox">
 			<h5>Get Nabla 1.0.0 Release</h5>
 			<div id="release-date">Released: 1 january 2012</div>
@@ -23,29 +23,29 @@
 				<li><a href="http://code.google.com/p/alban/w/list">Release Notes</a></li>
 			</ul>
 		</div>
-		
-		
+
+
 		<section name="Welcome to the Nabla Project ">
             <p>
-                Nabla is a portal engine which allows you <strong>to easily create your websites or intranets</strong> 
-				based upon HTML, XML... content. 
+                Nabla is a portal engine which allows you <strong>to easily create your websites or intranets</strong>
+				based upon HTML, XML... content.
 			</p>
 			<p>
-			    Nabla provides <strong>a user friendly interface for portal management</strong> and therefore no specific technical skills are required. 
+			    Nabla provides <strong>a user friendly interface for portal management</strong> and therefore no specific technical skills are required.
             </p>
             <p>
-				This software is implemented in <strong>Java</strong> and based on widely used libraries and frameworks : 
+				This software is implemented in <strong>Java</strong> and based on widely used libraries and frameworks :
 				Spring, Freemarker, Lucene, Ehcache, Jakarta-commons, ... .
 				Nabla is <strong>free and Open-Source</strong> : it is distributed under <a href="license.html">a BSD-like license</a>.
             </p>
             <!--
             <p>
-                Languages available are English and French. 
-                French users are invited to consult the <a href="http://code.google.com/p/alban">french site</a>. 
+                Languages available are English and French.
+                French users are invited to consult the <a href="http://code.google.com/p/alban">french site</a>.
             </p>
             -->
           </section>
-		  
+
 		  <section name="Nabla Documentation">
 
 			<div class="list-no-marker">
@@ -68,7 +68,7 @@
 						</div>
 						<div class="doc-details">
 							Information for developers willing to contribute to the Nabla project
-						</div>			
+						</div>
 						</li>
 					<li>
 						<div class="doc-link">
@@ -78,27 +78,27 @@
 						</div>
 						<div class="doc-details">
 							Data migration tools from Nabla 1.0 to Nabla 2.x
-						</div>			
+						</div>
 					</li>
 				</ul>
 			</div>
 		  </section>
-		  
+
 		  <section name="Plugins">
 			<p>
                 Nabla provides an highly modular architecture based on plugins.
-            </p>	
+            </p>
 			<div class="list-no-marker">
 				<ul>
 					<li>
 						<div class="doc-link">
-							<a href="available-plugins.html">					
+							<a href="available-plugins.html">
 								<img src="tech/images/icones/plugins.png" alt="Plugins List" title="Plugins List"/>
 			                    See the Plugins List</a>
 			            </div>
 						<div class="doc-details">
 							 Details about the available Nabla plugins
-						</div>	
+						</div>
 					</li>
 					<li>
 						<div class="doc-link">
@@ -108,13 +108,13 @@
 			            </div>
 						<div class="doc-details">
 							Information for developers willing to create new Nabla plugins
-						</div>	
+						</div>
 					</li>
 				</ul>
 			</div>
 		  </section>
-		  
-		  <section name="How to Get Support">			
+
+		  <section name="How to Get Support">
 			<p>
 				Support for Nabla is available in a variety of different forms.
 			</p>
@@ -127,7 +127,7 @@
 								Issue Tracking</a>
 						</div>
 						<div class="doc-details">
-						Report a bug, request new features, follow issues, ...						
+						Report a bug, request new features, follow issues, ...
 						</div>
 					</li>
 					<li>
@@ -155,4 +155,3 @@
 		  </section>
       </body>
   </document>
-          

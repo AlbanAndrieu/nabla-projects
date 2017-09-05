@@ -63,7 +63,7 @@ public abstract class ModelTransformer implements TransformerDataInterface
      * }
      */
     /**
-     * 
+     *
      */
 
     /*
@@ -81,7 +81,7 @@ public abstract class ModelTransformer implements TransformerDataInterface
      * }
      */
     /**
-     * 
+     *
      */
 
     /*

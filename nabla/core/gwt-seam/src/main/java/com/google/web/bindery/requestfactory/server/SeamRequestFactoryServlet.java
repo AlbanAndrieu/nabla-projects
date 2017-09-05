@@ -23,7 +23,7 @@ import com.google.web.bindery.requestfactory.server.RequestFactoryServlet;
  * &lt;url-pattern&gt;/gwtRequest&lt;/url-pattern&gt;
  * &lt;/servlet-mapping&gt;
  * </code></pre>
- * 
+ *
  * @author Florian Sauter
  */
 public class SeamRequestFactoryServlet extends RequestFactoryServlet

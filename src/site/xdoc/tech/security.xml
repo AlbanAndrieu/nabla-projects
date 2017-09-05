@@ -14,7 +14,7 @@
            manière modulaire l'authentification et la gestion des rôles associés aux
            utilisateurs authentifiés du site. L'objectif de cette API est de fournir
            un dispostif de « SSO » (Single Sign On), c'est à dire une authentification
-           unique des utilisateurs partagée par toutes les applications. Ceci signifie 
+           unique des utilisateurs partagée par toutes les applications. Ceci signifie
            que toute application du portail pourra
            vérifier que l'utilisateur courant est identifié et accéder à ses rôles.
            Outre l'authentification des utilisateurs, ces API permettent la réalisation
@@ -123,15 +123,15 @@
               <p>
                 <ul>
                     <li>
-                         l’utilisateur ne peut pas créer lui-même un compte. 
+                         l’utilisateur ne peut pas créer lui-même un compte.
                          La création du compte doit alors être réalisée au niveau
-                         de l’annuaire soit par une fonction d’administration intégrée 
+                         de l’annuaire soit par une fonction d’administration intégrée
                          à Nabla soit par un dispositif autre.
                     </li>
                     <li>
-                         l’utilisateur peut se créer un compte sans nécessiter 
+                         l’utilisateur peut se créer un compte sans nécessiter
                          l’intervention des administrateurs du site. Dans cette
-                         situation, l’écran de login affichera un lien vers la page 
+                         situation, l’écran de login affichera un lien vers la page
                          de création d’un nouveau compte.
                     </li>
                 </ul>
@@ -163,7 +163,7 @@
                 rôles n’est pas accessible.
              </p>
          </subsection>
-       
+
         <subsection name="Le nouveau service de sécurité SecurityService" >
 
               <p>
@@ -178,7 +178,7 @@
                           <img src="images/security004.gif" />
                   </center>
                </p>
-               <p>   
+               <p>
                       La principale méthode à utiliser est
                       <code>getRegisteredUser</code> qui permet d’obtenir l’identité
                       de l’utilisateur courant enregistré au niveau du
@@ -214,7 +214,7 @@
   throw new UserNotSignedException();
  }</pre>
                        </div>
-                    </p>   
+                    </p>
                     <p>
                        A l’instar des interfaces <code>HttpServletRequest</code> ou <code>
                        PortletRequest</code> (JSR 168), <code>SecurityService</code>
@@ -222,9 +222,9 @@
                        <code>getUserPrincipal</code> et <code>isUserInRole</code>.
                     </p>
         </subsection>
-     </section> 
+     </section>
      <section name="Mise en oeuvre" >
-        
+
         <subsection name="Paramétrage de l’authentification : Installation du plugin mynabla">
             <p>
                Le plugin doit être déployé comme n’importe quel
@@ -266,7 +266,7 @@ mynabla.authentication.class=com.nabla.project.portal.service.security.LDAPAuthe
        </subsection>
     </section>
     <section name="Les objets de base du système">
-        
+
         <subsection name="L’écran d’identification par défaut">
             <p>
                Dans le cas d’une identification interne au portail,
@@ -282,7 +282,7 @@ mynabla.authentication.class=com.nabla.project.portal.service.security.LDAPAuthe
                Cette page est accessible à partir de l’adresse <a href="http://myhost/nabla/jsp/site/Portal.jsp?page=mynabla&amp;action=login">
                http://myhost/nabla/jsp/site/Portal.jsp?page=mynabla&amp;action=login</a>.
             </p>
-            <p>               
+            <p>
                 Son adresse et celle du traitement du formulaire
                 d’identification sont paramétrées dans le fichier
                 <code>mynabla.properties</code> comme suit :
@@ -323,7 +323,7 @@ mynabla.url.doLogin=./plugins/mynabla/DoMyNablaLogin.jsp</pre>
                 </center>
               </p>
          </subsection>
-         
+
          <subsection name="Les pages par défaut de gestion du compte">
              <p>
                 Les pages par défaut concernant la gestion de compte
@@ -335,7 +335,7 @@ mynabla.url.doLogin=./plugins/mynabla/DoMyNablaLogin.jsp</pre>
                     <li>affichage des informations personnelles</li>
                     <li>mot de passe perdu</li>
                  </ul>
-             </p>   
+             </p>
              <p>
                 Les implémentations proposées ne sont pas
                 opérationnelles. Si de telles fonctions de gestion de
@@ -363,7 +363,7 @@ mynabla.url.createAccount.page=Portal.jsp?page=account_manager&amp;action=create
 mynabla.url.viewAccount.page=Portal.jsp?page= account_manager&amp;action=viewAccount
 mynabla.url.lostPassword.page=Portal.jsp?page= account_manager&amp;action=lostPassword</pre>
                  </div>
-              </p>    
+              </p>
            </subsection>
         </section>
 
@@ -375,7 +375,7 @@ mynabla.url.lostPassword.page=Portal.jsp?page= account_manager&amp;action=lostPa
             </p>
             <p>
                 Pour mettre en oeuvre ce mode de fonctionnement il faut positionner
-                à <code>true</code> la propriété suivante dans le fichier 
+                à <code>true</code> la propriété suivante dans le fichier
                 <code>mynabla.properties</code> :
             </p>
             <p>
@@ -386,12 +386,12 @@ mynabla.portal.authentication.required=true
                     </pre>
                 </div>
             </p>
-        </section>    
+        </section>
         <section name="L’authentification pour les applications">
             <subsection name="L'interface XPageSecureApplication">
                 <p>
                    Chaque application peut, par le biais du plugin dans lequel
-                   elle est packagée, définir définir si elle requiert ou non 
+                   elle est packagée, définir définir si elle requiert ou non
                    une authentification.
                 </p>
                 <p>
@@ -408,7 +408,7 @@ mynabla.portal.authentication.required=true
    &lt;/application&gt;</pre>
                    </div>
                </p>
-               <p>    
+               <p>
                       Les valeurs possibles de ce paramètre sont à ce jour :
                </p>
                <p>
@@ -442,7 +442,7 @@ mynabla.portal.authentication.required=true
                    Un autre moyen, depuis Nabla 1.3, permet de limiter l'accès
                    à l'application aux seuls utilisateurs disposant d'un rôle autorisé.
                    Ce dispositif est plus simple et offre une gestion plus fine que le
-                   précédent. 
+                   précédent.
                </p>
                <p>
                    Pour mettre en oeuvre cet accès restreint, il suffit de définir les
@@ -460,7 +460,7 @@ mynabla.portal.authentication.required=true
                </p>
 
            </subsection>
-               
+
            <subsection name="Gestion de l’utilisateur dans l’application">
                <p>
                   Lors d’une connexion à une application Nabla, il y a
@@ -470,42 +470,42 @@ mynabla.portal.authentication.required=true
                <p>
                   <ol>
                       <li>
-                           Si l’application ne requiert pas d’authentification, 
+                           Si l’application ne requiert pas d’authentification,
                            alors l’utilisateur a accès librement aux fonctionnalités
                            de l’application (cas actuellement du plugin contact).
                       </li>
                       <li>
-                           Si dans le fichier de configuration du plugin, 
+                           Si dans le fichier de configuration du plugin,
                            il a été défini que l’application devait être accessible
-                           uniquement à une population autorisée, alors les actions 
+                           uniquement à une population autorisée, alors les actions
                            suivantes sont entreprises :
                           <ul>
                               <li>
                                   détection dans la session des paramètres d’authentification.
                               </li>
                               <li>
-                                  si l’utilisateur n’est pas encore authentifié, 
+                                  si l’utilisateur n’est pas encore authentifié,
                                   redirection vers une page d’authentification propre à
                                   Nabla commune à toutes les applications.
                               </li>
                               <li>
-                                  si l’utilisateur est authentifié, et l’application 
+                                  si l’utilisateur est authentifié, et l’application
                                   n’est pas autorisée pour cet
                                   utilisateur, redirection vers une page d’erreur.
                               </li>
                               <li>
-                                  si l’utilisateur est authentifié et l’application 
+                                  si l’utilisateur est authentifié et l’application
                                   est autorisée pour cet utilisateur, on le redirige
                                   vers la page d’accueil de l’application.
                               </li>
                           </ul>
                       </li>
                   </ol>
-               </p>      
+               </p>
                <p>
                   L'implémentation de ce mécanisme est la suivante :
                </p>
-               <p>   
+               <p>
                    <center>
                        <img src="images/security008.gif" />
                    </center>
@@ -520,7 +520,7 @@ mynabla.portal.authentication.required=true
                </p>
            </subsection>
        </section>
-       
+
        <section name="Application sécurisée de test">
            <p>
                Un plugin "securedtestapp" a été réalisé pour tester
@@ -554,7 +554,7 @@ mynabla.portal.authentication.required=true
                           </em></strong>
                       </td>
                   </tr>
-                  <tr>                   
+                  <tr>
 <td><pre>Dans mynabla.properties :
 mynabla.authentication.enable=false</pre></td>
                   </tr>
@@ -566,10 +566,10 @@ mynabla.authentication.enable=false</pre></td>
                       </td>
                   </tr>
                   <tr>
-                      <td> 
+                      <td>
 <pre>Dans  mynabla.properties :
 mynabla.authentication.enable=true
-mynabla.authentication.class=&lt; classe module authentification &gt;                          
+mynabla.authentication.class=&lt; classe module authentification &gt;
 mynabla.portal.authentication.required=true
 </pre>
                       </td>
@@ -583,10 +583,10 @@ mynabla.portal.authentication.required=true
                       </td>
                   </tr>
                   <tr>
-                      <td> 
+                      <td>
 <pre>Dans  mynabla.properties :
 mynabla.authentication.enable=true
-mynabla.authentication.class=&lt; classe module authentification &gt;                          
+mynabla.authentication.class=&lt; classe module authentification &gt;
 
 Dans le fichier XML du plugin de l'application :
    &lt;application-security-model&gt;1&lt;/application-security-model&gt;
@@ -603,15 +603,15 @@ Dans le fichier XML du plugin de l'application :
                       </td>
                   </tr>
                   <tr>
-                      <td> 
-                          
+                      <td>
+
 <pre>Dans  mynabla.properties :
 mynabla.authentication.enable=true
-mynabla.authentication.class=&lt; classe module authentification &gt;                          
+mynabla.authentication.class=&lt; classe module authentification &gt;
 
 Dans le fichier XML du plugin de l'application :
      &lt;application-roles&gt;role1,role2,admin&lt;/application-roles&gt;
-</pre>                           
+</pre>
                       </td>
                   </tr>
                   <tr>
@@ -623,15 +623,15 @@ Dans le fichier XML du plugin de l'application :
                       </td>
                   </tr>
                   <tr>
-                      <td> 
+                      <td>
 <pre>Dans  mynabla.properties :
 mynabla.authentication.enable=true
-mynabla.authentication.class=&lt; classe module authentification &gt;                          
+mynabla.authentication.class=&lt; classe module authentification &gt;
 
 Dans le code de l'application :
-- Tester si l'utilisateur dispose du rôle pour 
+- Tester si l'utilisateur dispose du rôle pour
   la fonction donnée avec "isUserInRole()"
-- Forcer l'authentification de l'utilisateur 
+- Forcer l'authentification de l'utilisateur
   avec "throw new UserNotSignedException()" si
   celui-ci ne s'est pas encore identifié.
 </pre>

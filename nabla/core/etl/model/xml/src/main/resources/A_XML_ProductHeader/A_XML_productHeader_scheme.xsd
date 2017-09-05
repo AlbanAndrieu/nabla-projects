@@ -17,11 +17,11 @@
 	<!-- *********************************************** -->
 	<!--*** ProductHeader Schemes *** -->
 	<!-- *********************************************** -->
-	<!-- <xs:simpleType name="detailedProductStructureTypeScheme"> <xs:annotation> 
-		<xs:documentation> <definition>Indicator of level of detail inside productStructure 
-		: Whole, CurrentFlow, ForwardFlow</definition> </xs:documentation> </xs:annotation> 
-		<xs:restriction base="xs:string"> <xs:enumeration value="AllFlows"/> <xs:enumeration 
-		value="CurrentFlow"/> <xs:enumeration value="ForwardFlows"/> <xs:enumeration 
+	<!-- <xs:simpleType name="detailedProductStructureTypeScheme"> <xs:annotation>
+		<xs:documentation> <definition>Indicator of level of detail inside productStructure
+		: Whole, CurrentFlow, ForwardFlow</definition> </xs:documentation> </xs:annotation>
+		<xs:restriction base="xs:string"> <xs:enumeration value="AllFlows"/> <xs:enumeration
+		value="CurrentFlow"/> <xs:enumeration value="ForwardFlows"/> <xs:enumeration
 		value="PastFlows"/> </xs:restriction> </xs:simpleType> -->
 	<xs:simpleType name="maturityDateTypeScheme">
 		<xs:restriction base="xs:string">
@@ -50,20 +50,20 @@
 			<xs:enumeration value="Other" />
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- <xs:simpleType name="productClassScheme"> <xs:annotation> <xs:documentation> 
-		<definition>High-level product Class like "BOND", "IRD", "FX"...</definition> 
-		</xs:documentation> </xs:annotation> <xs:restriction base="xs:string"> <xs:enumeration 
-		value="fix"/> <xs:enumeration value="ird"/> <xs:enumeration value="fx"/> 
-		<xs:enumeration value="fxOption"/> <xs:enumeration value="deposit"/> <xs:enumeration 
-		value="cty"/> <xs:enumeration value="loan"/> <xs:enumeration value="creder"/> 
-		<xs:enumeration value="ListedDerivatives"/> </xs:restriction> </xs:simpleType> 
-		<xs:simpleType name="productComplexityScheme"> <xs:annotation> <xs:documentation> 
-		<definition>Exotic, Semi-exotic or Vanilla category of the product</definition> 
-		</xs:documentation> </xs:annotation> <xs:restriction base="xs:string"> <xs:enumeration 
-		value="Exotic"/> <xs:enumeration value="SemiExotic"/> <xs:enumeration value="Vanilla"/> 
-		<xs:enumeration value="Other"/> </xs:restriction> </xs:simpleType> <xs:simpleType 
-		name="productLinkTypeScheme"> <xs:annotation> <xs:documentation> <definition>product 
-		link type</definition> </xs:documentation> </xs:annotation> <xs:restriction 
-		base="xs:string"> <xs:enumeration value="MasterExercise"/> <xs:enumeration 
+	<!-- <xs:simpleType name="productClassScheme"> <xs:annotation> <xs:documentation>
+		<definition>High-level product Class like "BOND", "IRD", "FX"...</definition>
+		</xs:documentation> </xs:annotation> <xs:restriction base="xs:string"> <xs:enumeration
+		value="fix"/> <xs:enumeration value="ird"/> <xs:enumeration value="fx"/>
+		<xs:enumeration value="fxOption"/> <xs:enumeration value="deposit"/> <xs:enumeration
+		value="cty"/> <xs:enumeration value="loan"/> <xs:enumeration value="creder"/>
+		<xs:enumeration value="ListedDerivatives"/> </xs:restriction> </xs:simpleType>
+		<xs:simpleType name="productComplexityScheme"> <xs:annotation> <xs:documentation>
+		<definition>Exotic, Semi-exotic or Vanilla category of the product</definition>
+		</xs:documentation> </xs:annotation> <xs:restriction base="xs:string"> <xs:enumeration
+		value="Exotic"/> <xs:enumeration value="SemiExotic"/> <xs:enumeration value="Vanilla"/>
+		<xs:enumeration value="Other"/> </xs:restriction> </xs:simpleType> <xs:simpleType
+		name="productLinkTypeScheme"> <xs:annotation> <xs:documentation> <definition>product
+		link type</definition> </xs:documentation> </xs:annotation> <xs:restriction
+		base="xs:string"> <xs:enumeration value="MasterExercise"/> <xs:enumeration
 		value="SlaveExercise"/> </xs:restriction> </xs:simpleType> -->
 </xs:schema>

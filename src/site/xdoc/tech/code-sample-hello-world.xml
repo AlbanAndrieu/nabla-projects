@@ -8,17 +8,17 @@
     </properties>
     <body>
         <section name="Sample Code : The HelloWorld Plugin">
-        <subsection name="First implementation">    
+        <subsection name="First implementation">
             <p>
-                This is the simplest plugin implementation. The goal of the plugin is to 
+                This is the simplest plugin implementation. The goal of the plugin is to
                 display the text "Hello, world!". We will use a to achieve this objective,
                 we will use an XPageApplication. The plugin name will be <strong>helloworld</strong>
-                and the implementation class will be <code>HelloWorldApp</code>. By respecting the 
-                naming rules and the internal structure of plugins, the java class will be created 
+                and the implementation class will be <code>HelloWorldApp</code>. By respecting the
+                naming rules and the internal structure of plugins, the java class will be created
                 in the <code>com.nabla.project.plugins.helloworld.web</code> package.
             </p>
             <p>
-                Here is the simplest implementation of this class 
+                Here is the simplest implementation of this class
             </p>
             <p>
                 <div class="source">
@@ -41,12 +41,12 @@ public class HelloWorldApp implements XPageApplication
         page.setPathLabel( "Hello, World!" );
         return page;
     }
-}                       
+}
                     </pre>
                 </div>
             </p>
             <p>
-                In the first implementation, we create our page by creating a 
+                In the first implementation, we create our page by creating a
                 new instance of an XPage and we mention the following attributes:
             </p>
             <p>
@@ -82,13 +82,13 @@ public class HelloWorldApp implements XPageApplication
                 </table>
             </p>
             <p>
-                This implementation illustrates the base functions of the 
+                This implementation illustrates the base functions of the
                 application XPage, nevertheless it does not adhere to certain
                 elementary development rules which forbid use of hard coded HTML
-                or labels variables.A correct implementation is realized by using basic 
+                or labels variables.A correct implementation is realized by using basic
                 Nabla services.
             </p>
-        </subsection>    
+        </subsection>
         <subsection name="Packaging the plugin">
             <p>
                 For a production version,a deployment file is needed. It must be created in the
@@ -127,13 +127,13 @@ public class HelloWorldApp implements XPageApplication
    &lt;applications&gt;
 
 &lt;/plug-in&gt;
-                        
+
                     </pre>
                 </div>
             </p>
             <p>
                 An application icon must be created and stored in the <code>images/admin/skin/plugins/helloworld</code>
-                folder.            
+                folder.
             </p>
             <p>
                 Here is our application icon  <img src="images/helloworld.png" />
@@ -163,11 +163,11 @@ public class HelloWorldApp2 implements XPageApplication
     private static final String TEMPLATE_HELLO_WORLD = "site/plugins/helloworld/helloworld.html";
     private static final String PROPERTY_PAGE_TITLE = "helloworld.pageTitle";
     private static final String PROPERTY_PAGE_PATH_LABEL = "helloworld.pagePathLabel";
-    
+
     public XPage getPage( HttpServletRequest request, int nMode, Plugin plugin )
     {
         XPage page = new XPage(  );
-        
+
         HtmlTemplate template = <strong>AppTemplateService.getTemplate</strong>( TEMPLATE_HELLO_WORLD );
         String strPageTitle = <strong>AppPropertiesService.getProperty</strong>( PROPERTY_PAGE_TITLE );
         String strPagePathLabel = <strong>AppPropertiesService.getProperty</strong>( PROPERTY_PAGE_PATH_LABEL );
@@ -175,15 +175,15 @@ public class HelloWorldApp2 implements XPageApplication
         page.setContent( template.getHtml() );
         page.setTitle( strPageTitle );
         page.setPathLabel( strPagePathLabel );
-        
+
         return page;
     }
 }                  </pre>
                 </div>
             </p>
             <p>
-                This implementation needs creation of 
-                <code>helloworld.html</code> HTML file in the folder 
+                This implementation needs creation of
+                <code>helloworld.html</code> HTML file in the folder
                 <code>WEB-INF/templates/skin/plugins/helloworld</code>
             </p>
             <p>
@@ -196,12 +196,12 @@ public class HelloWorldApp2 implements XPageApplication
     &lt;h1&gt;
         Hello, World!
     &lt;/h1&gt;
-&lt;/center&gt;                        
+&lt;/center&gt;
                     </pre>
                 </div>
             </p>
             <p>
-                <code>helloworld.properties</code> must be created  in the 
+                <code>helloworld.properties</code> must be created  in the
                  <code>WEB-INF/conf/plugins</code> folder.
             </p>
             <p>
@@ -227,7 +227,7 @@ helloworld.pagePathLabel=Hello World
             <p>
                 To generate the resources in several languages, a property file
                 corresponding to each language must be placed in the <code>com.nabla.project.plugins.helloworld.resources</code>
-                package.          
+                package.
             </p>
             <p>
                 <ul>
@@ -246,13 +246,13 @@ helloworld.pagePathLabel=Hello World
 # resources file for plugin helloworld in french
 
 content=Bonjour le Monde !
-pageTitle=Application Bonjour le Monde 
-pagePathLabel=Bonjour le Monde 
+pageTitle=Application Bonjour le Monde
+pagePathLabel=Bonjour le Monde
                     </pre>
                 </div>
             </p>
             <p>
-                Here is the new file content <code>heloworld.html</code> : 
+                Here is the new file content <code>heloworld.html</code> :
             </p>
             <p>
                 <div class="source">
@@ -261,7 +261,7 @@ pagePathLabel=Bonjour le Monde
     &lt;h1&gt;
         #i18n{helloworld.content}
     &lt;/h1&gt;
-&lt;/center&gt;                        
+&lt;/center&gt;
                     </pre>
                 </div>
             </p>
@@ -290,11 +290,11 @@ public class HelloWorldApp3 implements XPageApplication
     private static final String TEMPLATE_HELLO_WORLD = "site/plugins/helloworld/helloworld.html";
     private static final String PROPERTY_PAGE_TITLE = "helloworld.pageTitle";
     private static final String PROPERTY_PAGE_PATH_LABEL = "helloworld.pagePathLabel";
-    
+
     public XPage getPage( HttpServletRequest request, int nMode, Plugin plugin )
     {
         XPage page = new XPage(  );
-        
+
         Locale locale = request.getLocale();
         HtmlTemplate template = AppTemplateService.getTemplate( TEMPLATE_HELLO_WORLD , locale );
         String strPageTitle = I18nService.getLocalizedString( PROPERTY_PAGE_TITLE , locale );
@@ -303,7 +303,7 @@ public class HelloWorldApp3 implements XPageApplication
         page.setContent( template.getHtml() );
         page.setTitle( strPageTitle );
         page.setPathLabel( strPagePathLabel );
-        
+
         return page;
     }
 }                    </pre>

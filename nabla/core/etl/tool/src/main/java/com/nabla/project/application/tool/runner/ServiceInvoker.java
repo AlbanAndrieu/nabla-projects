@@ -48,7 +48,7 @@ import java.util.List;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -66,7 +66,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param invocation DOCUMENT ME!
      * @return DOCUMENT ME!
      * @throws Throwable DOCUMENT ME!
@@ -226,7 +226,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Object getService()
@@ -238,7 +238,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param service DOCUMENT ME!
      */
     public void setService(Object service)
@@ -250,7 +250,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Class getServiceInterface()
@@ -262,7 +262,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param serviceInterface DOCUMENT ME!
      */
     public void setServiceInterface(Class serviceInterface)
@@ -274,7 +274,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public InvocationType getInvocationType()
@@ -286,7 +286,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param invocationType DOCUMENT ME!
      */
     public void setInvocationType(InvocationType invocationType)
@@ -298,7 +298,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getNewVMServiceBeanName()
@@ -310,7 +310,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param newVMServiceBeanName DOCUMENT ME!
      */
     public void setNewVMServiceBeanName(String newVMServiceBeanName)
@@ -322,7 +322,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getNewVMconfigFileName()
@@ -334,7 +334,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param newVMconfigFileName DOCUMENT ME!
      */
     public void setNewVMconfigFileName(String newVMconfigFileName)
@@ -346,7 +346,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public List<String> getAsynchronousMethodNameList()
@@ -358,7 +358,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param asynchronousMethodNameList DOCUMENT ME!
      */
     public void setAsynchronousMethodNameList(List<String> asynchronousMethodNameList)
@@ -399,7 +399,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getNewVMClasspathRoot()
@@ -411,7 +411,7 @@ public class ServiceInvoker implements MethodInterceptor, InitializingBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param newVMClasspathRoot DOCUMENT ME!
      */
     public void setNewVMClasspathRoot(String newVMClasspathRoot)

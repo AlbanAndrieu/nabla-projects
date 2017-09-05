@@ -49,7 +49,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -63,7 +63,7 @@ public class PipeBlockingQueueService
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param <T> DOCUMENT ME!
      * @param name DOCUMENT ME!
      * @param requestId DOCUMENT ME!
@@ -99,7 +99,7 @@ public class PipeBlockingQueueService
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param name DOCUMENT ME!
      * @param requestId DOCUMENT ME!
      */
@@ -173,7 +173,7 @@ public class PipeBlockingQueueService
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param queues DOCUMENT ME!
      */
     public static void destroyQueues(Set<Pipe<Object>> queues)
@@ -202,7 +202,7 @@ public class PipeBlockingQueueService
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @author $Author: albandri $
      * @version $Revision: 358 $
      * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -218,7 +218,7 @@ public class PipeBlockingQueueService
 
         /**
          * Creates a new PipeBlockingQueue object.
-         * 
+         *
          * @param capacity DOCUMENT ME!
          */
         public PipeBlockingQueue(int capacity)
@@ -229,7 +229,7 @@ public class PipeBlockingQueueService
 
         /**
          * DOCUMENT ME!
-         * 
+         *
          * @param timeout DOCUMENT ME!
          * @param unit DOCUMENT ME!
          * @return DOCUMENT ME!
@@ -259,7 +259,7 @@ public class PipeBlockingQueueService
 
         /**
          * DOCUMENT ME!
-         * 
+         *
          * @param o DOCUMENT ME!
          */
         @Override

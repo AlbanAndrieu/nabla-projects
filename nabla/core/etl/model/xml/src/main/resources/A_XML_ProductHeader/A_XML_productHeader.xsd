@@ -7,7 +7,7 @@
 	xmlns:TPI="urn:nabla:A_XML_TradePartyInfo:1_0_0" xmlns:TPY="urn:nabla:A_XML_TradePayment:1_0_0"
 	xmlns:TCD="urn:nabla:A_XML_TradeConditions:1_0_0" xmlns:PTY="urn:nabla:A_XML_TradingParty:1_0_0"
 	xmlns:THD="urn:nabla:A_XML_TradeHeader:1_0_0" xmlns:INS="urn:nabla:A_XML_InstrumentService:1_0_0">
-	
+
 	<!-- *********************************************** -->
 	<!--Version Of The Package -->
 	<xs:annotation>
@@ -51,11 +51,11 @@
 			<xs:element ref="PHD:observableReference" />
 		</xs:choice>
 	</xs:complexType>
-	<!-- <xs:complexType name="XML_ProductCommercialTypology"> <xs:sequence> 
-		<xs:element ref="PHD:productCategoryCode" /> <xs:element ref="PHD:productSubCategoryCode" 
-		minOccurs="0" /> <xs:element name="productTypeCode" type="REF:XML_Code"> 
-		<xs:annotation> <xs:documentation> <definition>product commercial typology</definition> 
-		</xs:documentation> </xs:annotation> </xs:element> <xs:element ref="PHD:productTypeName" 
+	<!-- <xs:complexType name="XML_ProductCommercialTypology"> <xs:sequence>
+		<xs:element ref="PHD:productCategoryCode" /> <xs:element ref="PHD:productSubCategoryCode"
+		minOccurs="0" /> <xs:element name="productTypeCode" type="REF:XML_Code">
+		<xs:annotation> <xs:documentation> <definition>product commercial typology</definition>
+		</xs:documentation> </xs:annotation> </xs:element> <xs:element ref="PHD:productTypeName"
 		minOccurs="0" /> </xs:sequence> </xs:complexType> -->
 	<xs:complexType name="XML_ProductDates">
 		<xs:annotation>
@@ -101,10 +101,10 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<!-- <xs:complexType name="XML_ProductGroupTypology"> <xs:sequence> <xs:element 
-		name="productNatureGroupCode" type="REF:XML_Code" minOccurs="0"> <xs:annotation> 
-		<xs:documentation> <definition>DEVL nature code for the group</definition> 
-		</xs:documentation> </xs:annotation> </xs:element> <xs:element ref="PHD:productGroupCode" 
+	<!-- <xs:complexType name="XML_ProductGroupTypology"> <xs:sequence> <xs:element
+		name="productNatureGroupCode" type="REF:XML_Code" minOccurs="0"> <xs:annotation>
+		<xs:documentation> <definition>DEVL nature code for the group</definition>
+		</xs:documentation> </xs:annotation> </xs:element> <xs:element ref="PHD:productGroupCode"
 		minOccurs="0" /> </xs:sequence> </xs:complexType> -->
 	<xs:complexType name="XML_ProductHeader">
 		<xs:sequence>
@@ -303,7 +303,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<!-- <xs:element ref="PHD:productLegalWrapperTypeCode" minOccurs="0"/> 
+			<!-- <xs:element ref="PHD:productLegalWrapperTypeCode" minOccurs="0"/>
 				<xs:element ref="PHD:productFinancialStructureTypeCode" minOccurs="0" /> -->
 			<xs:element name="productStructureTypology" type="PHD:XML_ProductStructureTypology"
 				minOccurs="0">
@@ -389,11 +389,11 @@
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- <xs:element name="productClass" type="PHD:productClassScheme"> <xs:annotation> 
-		<xs:documentation> <definition>High-level product Class</definition> <samples>bond,ird,creder,fx...</samples> 
-		</xs:documentation> </xs:annotation> </xs:element> <xs:element name="productComplexity" 
-		type="PHD:productComplexityScheme"> <xs:annotation> <xs:documentation> <definition>Exotic, 
-		Semi-exotic or Vanilla category of the product</definition> </xs:documentation> 
+	<!-- <xs:element name="productClass" type="PHD:productClassScheme"> <xs:annotation>
+		<xs:documentation> <definition>High-level product Class</definition> <samples>bond,ird,creder,fx...</samples>
+		</xs:documentation> </xs:annotation> </xs:element> <xs:element name="productComplexity"
+		type="PHD:productComplexityScheme"> <xs:annotation> <xs:documentation> <definition>Exotic,
+		Semi-exotic or Vanilla category of the product</definition> </xs:documentation>
 		</xs:annotation> </xs:element> -->
 	<xs:element name="productGroupCode" type="REF:XML_Code">
 		<xs:annotation>
@@ -402,9 +402,9 @@
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<!-- <xs:element name="productGroupTypology" type="PHD:A_XML_ProductGroupTypology"> 
-		<xs:annotation> <xs:documentation> <definition>TRANSITORY: product group 
-		typology (from DEVL nomenclature) - used by RISK applications for example.</definition> 
+	<!-- <xs:element name="productGroupTypology" type="PHD:A_XML_ProductGroupTypology">
+		<xs:annotation> <xs:documentation> <definition>TRANSITORY: product group
+		typology (from DEVL nomenclature) - used by RISK applications for example.</definition>
 		</xs:documentation> </xs:annotation> </xs:element> -->
 	<xs:element name="productIdentifier" type="PHD:XML_ProductIdentifier">
 		<xs:annotation>
@@ -490,16 +490,16 @@
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="productStructureSubTypeCode" type="REF:XML_Code" />
-	<!-- <xs:element name="productSubCategoryCode" type="REF:XML_Code"> <xs:annotation> 
-		<xs:documentation> <definition>Business sub-category - productClass specific</definition> 
-		</xs:documentation> </xs:annotation> </xs:element> <xs:element name="productFinancialStructureTypeCode" 
-		type="REF:XML_Code"> <xs:annotation> <xs:documentation> <definition>TARGET: 
-		This is the finer type of the financial structure of a product.(equivalent 
-		to "PayOff" type deai notion</definition> </xs:documentation> </xs:annotation> 
-		</xs:element> <xs:element name="productTypology" type="PHD:XML_ProductTypologyInfo"> 
-		<xs:annotation> <xs:documentation> <definition>This element is the place 
-		where we store and send the different typologies in the header. This header 
-		caries both the current versions of the different typologies and the target 
+	<!-- <xs:element name="productSubCategoryCode" type="REF:XML_Code"> <xs:annotation>
+		<xs:documentation> <definition>Business sub-category - productClass specific</definition>
+		</xs:documentation> </xs:annotation> </xs:element> <xs:element name="productFinancialStructureTypeCode"
+		type="REF:XML_Code"> <xs:annotation> <xs:documentation> <definition>TARGET:
+		This is the finer type of the financial structure of a product.(equivalent
+		to "PayOff" type deai notion</definition> </xs:documentation> </xs:annotation>
+		</xs:element> <xs:element name="productTypology" type="PHD:XML_ProductTypologyInfo">
+		<xs:annotation> <xs:documentation> <definition>This element is the place
+		where we store and send the different typologies in the header. This header
+		caries both the current versions of the different typologies and the target
 		version.</definition> </xs:documentation> </xs:annotation> </xs:element> -->
 	<xs:element name="productTypeName" type="xs:string">
 		<xs:annotation>

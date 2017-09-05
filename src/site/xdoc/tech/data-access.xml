@@ -17,7 +17,7 @@
                        The pool declaration is done into a <code>db.properties</code>
                        situated into the <code>WEB-INF/conf</code> folder.
                    </p>
-                   <p>    
+                   <p>
                        <div class="source">
                            <pre>
 # Pool for the quiz plugin database
@@ -46,7 +46,7 @@ quiz.checkvalidconnectionsql=SELECT 1   </pre>
                                </td>
                                <td>
                                    The class name which will try to connect to the pool.
-                                   By default the service is a Nabla service, but can be replaced by 
+                                   By default the service is a Nabla service, but can be replaced by
                                    a Tomcat pool service :
                                    <code>com.nabla.project.util.pool.service.TomcatConnectionService</code>
                                </td>
@@ -65,7 +65,7 @@ quiz.checkvalidconnectionsql=SELECT 1   </pre>
                                </td>
                                <td>
                                   The URL  of the JDBC connection to the database containing
-                                   namely the protocol, optional port number, server name and that of the database 
+                                   namely the protocol, optional port number, server name and that of the database
                                </td>
                            </tr>
                            <tr>
@@ -81,7 +81,7 @@ quiz.checkvalidconnectionsql=SELECT 1   </pre>
                                    password
                                </td>
                                <td>
-                                   The user's password to the database 
+                                   The user's password to the database
                                </td>
                            </tr>
                           <tr>
@@ -97,7 +97,7 @@ quiz.checkvalidconnectionsql=SELECT 1   </pre>
                                    maxconns
                                </td>
                                <td>
-                                   The maximum number of connections on the pool 
+                                   The maximum number of connections on the pool
                                </td>
                            </tr>
                            <tr>
@@ -151,11 +151,11 @@ quiz.checkvalidconnectionsql=SELECT 1   </pre>
                    <p>
                        <div class="source">
                            <pre>
-                               
+
 private static final String SQL_QUERY_SELECT = "SELECT id_contact, \
     description, email, contact_order FROM contact WHERE id_contact = ? ";
-    
-...                              
+
+...
 Contact load( int nContactId , Plugin plugin )
 {
         DAOUtil daoUtil = new DAOUtil( SQL_QUERY_SELECT , plugin );
@@ -174,7 +174,7 @@ Contact load( int nContactId , Plugin plugin )
         }
         daoUtil.free();
         return contact;
-}         
+}
                            </pre>
                        </div>
                    </p>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<!-- http://logging.apache.org/index.html http://beuss.developpez.com/tutoriels/java/jakarta/log4j/ 
+<!-- http://logging.apache.org/index.html http://beuss.developpez.com/tutoriels/java/jakarta/log4j/
 	http://zekey.developpez.com/articles/spring/ -->
 <log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
 
@@ -76,10 +76,9 @@
 		<appender-ref ref="XMLOutFormat" />
 		<appender-ref ref="CHAINSAW_CLIENT" />
 
-		<!-- <appender-ref ref="ROLL" /> <appender-ref ref="ACCESS" /> <appender-ref 
+		<!-- <appender-ref ref="ROLL" /> <appender-ref ref="ACCESS" /> <appender-ref
 			ref="EventViewer"/> -->
 		<!-- <priority value="debug" /> <appender-ref ref="ConsoleSimple" /> -->
 	</root>
 
 </log4j:configuration>
-

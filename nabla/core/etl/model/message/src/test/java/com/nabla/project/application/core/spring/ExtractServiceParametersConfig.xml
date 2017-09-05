@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="http://www.springframework.org/schema/beans 
-			http://www.springframework.org/schema/beans/spring-beans-2.0.xsd 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
 	<!-- This file is only used on client side to merge all the properties in a single bean -->
@@ -11,9 +11,9 @@
 		<description>
 			This bean is the 'normal' parameter used by the application.
 			It allows a single declaration of the scope data.
-		</description>	
+		</description>
 		<!--<property name="perimeter" ref="dataPerimeterTrade"/>-->
-		<property name="perimeter" ref="tradePerimeterBean"/>		
+		<property name="perimeter" ref="tradePerimeterBean"/>
 		<property name="output" ref="fileOutputTrade"/>
 		<property name="status" ref="fileStatusTrade"/>
 		<property name="format" value="XML"/>
@@ -24,7 +24,7 @@
 		scope="prototype">
 		<description>
 			This bean contain the XMLdestination file name.
-		</description>	
+		</description>
 		<property name="url" value="testExtracData"/>
 	</bean>
 	<bean id="fileStatusTrade"

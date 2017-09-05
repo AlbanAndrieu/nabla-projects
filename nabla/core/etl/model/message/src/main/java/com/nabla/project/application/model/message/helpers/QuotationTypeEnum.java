@@ -20,7 +20,7 @@ public enum QuotationTypeEnum
 
     /**
      * Creates a new QuotationTypeEnum object.
-     * 
+     *
      * @param dbV DOCUMENT ME!
      * @param xmlV DOCUMENT ME!
      */

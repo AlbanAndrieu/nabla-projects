@@ -23,10 +23,10 @@
                  <li>The new plugin is deactivated in the plugin list. Click to activate proper installation.</li>
                  <li>[ optional ] Selection the connection pool possibly used by the plugin.</li>
              </ul>
-             
+
              <subsection name="The extensions brought by the plugins">
                  <p>Many types of extension are available :</p>
-                 
+
                  <ul>
                      <li>new portlet type [ <a href="howto-create-portlets.html">Portlets</a> ]</li>
                      <li>new integrated application [ <a href="howto-create-xpages.html">Application</a> ]</li>
@@ -35,7 +35,7 @@
                      <li>new link indexing service [ <a href="howto-create-linkservices.html">InsertServices</a> ]</li>
                      <li>new page inclusion service [ <a href="howto-create-pageincludeservices.html">PageIncludeServices</a> ]</li>
                  </ul>
-                 
+
                  <p>
                     A plugin can contain one or more extension types. For example, it can introduce a new type
                     of portlet and two administrative functions to manage this portlet type.
@@ -56,12 +56,12 @@
                     </ul>
                   </p>
               </subsection>
-              
+
               <subsection name="Plugins and databases">
                    <p>
-                      
-                      The plugin can access to two databases. It can access to the Nabla database 
-                      through the <code>AppConnectionService</code> class. 
+
+                      The plugin can access to two databases. It can access to the Nabla database
+                      through the <code>AppConnectionService</code> class.
                      , but it is also possible to affect a specific connection pool
                      by declaring it in the <code>db.properties</code> during the installation phase.
                    </p>
@@ -73,15 +73,15 @@
                        To prevent loading of a plugin, the XML file must be removed from the folder.
                   </p>
                   <p>
-                      
-                       The data concerning the local status(state installed/not-installed, specific 
+
+                       The data concerning the local status(state installed/not-installed, specific
                        connection pool, ...) are recorded in the <code>plugins.dat</code>
                        located in the same folder.
                   </p>
-                  <p>     
-                       If a plugin has a "properties" file, it must be placed into the 
+                  <p>
+                       If a plugin has a "properties" file, it must be placed into the
                        <code>/WEB-INF/conf/plugins</code> folder.
-                       The property files will be automatically loaded and added to 
+                       The property files will be automatically loaded and added to
                        all the properties of the application. They will be accessible
                        by means of <code>AppPropertiesService</code>.
                        All plugin properties must be prefixed by the name of the plugin
@@ -93,12 +93,12 @@
                        A plugin may need a large set of different file types.Here
                        are the folders designed to contain these files.
                   </p>
-                  <p>     
+                  <p>
                      <table>
                          <tr>
                              <th>File Type</th>
                              <th>Folder</th>
-                         </tr>   
+                         </tr>
                          <tr>
                              <td>The JSPs used for administrative purpose</td>
                              <td>/jsp/admin/plugins/&lt;plugin_name&gt;/*.jsp</td>
@@ -147,7 +147,7 @@
                      </p>
                      <p>
                           The organization of source files is follows :
-                     </p>   
+                     </p>
                      <p>
                        <table>
                            <tr>
@@ -207,12 +207,12 @@
     &lt;css-stylesheets&gt;
          &lt;css-stylesheet&gt;myplugin/myplugin.css&lt;/css-stylesheet&gt;
     &lt;/css-stylesheets&gt;
-    
+
     &lt;!-- Specific scripts eventually used  --&gt;
     &lt;javascript-files&gt;
          &lt;javascript-file&gt;myplugin/myplugin.css&lt;/javascript-file&gt;
     &lt;/javascript-files&gt;
-    
+
     &lt;!-- List of administrative features eventually intreoduced be the plugin--&gt;
     &lt;admin-features&gt;
          &lt;admin-feature&gt;
@@ -260,13 +260,13 @@
 
 &lt;/plug-in&gt;</pre>
                         </div>
-                    </p>    
-                    <p>    
+                    </p>
+                    <p>
                         A plugin dtd is availabe in the /WEB-INF/plugins folder from Nabla WebApp.
-                
+
                     </p>
               </subsection>
-              
+
               <subsection name="Modules">
                   <p>
                        Some plugins need their own plugins. These are called <b>modules</b>.
@@ -280,7 +280,7 @@
                           <tr>
                               <th>Type of file</th>
                               <th>Folder</th>
-                          </tr>   
+                          </tr>
                           <tr>
                               <td>Java source files packages</td>
                               <td>/src/java/fr/nabla/plugins/&lt;plugin_name&gt;/modules/&lt;module_name&gt;/**/*.java</td>
@@ -298,9 +298,9 @@
                               <td>/WEB-INF/conf/plugins/&lt;plugin_name&gt;-&lt;module_name&gt;.properties</td>
                           </tr>
                        </table>
-                   </p>    
+                   </p>
               </subsection>
-              
-          </section>    
-      </body>    
+
+          </section>
+      </body>
 </document>

@@ -42,7 +42,7 @@ import com.nabla.project.application.api.helpers.PipePublisher;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -61,7 +61,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Object getId()
@@ -73,7 +73,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param id DOCUMENT ME!
      */
     public void setId(Object id)
@@ -85,7 +85,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public RequestId getRequestId()
@@ -97,7 +97,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param requestId DOCUMENT ME!
      */
     public void setRequestId(RequestId requestId)
@@ -109,7 +109,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getName()
@@ -121,7 +121,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param name DOCUMENT ME!
      */
     public void setName(String name)
@@ -133,7 +133,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Perimeter getPerimeter()
@@ -145,7 +145,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Pipe<X> getPipe()
@@ -157,7 +157,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param pipe DOCUMENT ME!
      */
     public void setPipe(Pipe<X> pipe)
@@ -169,7 +169,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param perimeter DOCUMENT ME!
      */
     public void setPerimeter(Perimeter perimeter)
@@ -181,7 +181,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public ExtractDataInterface getExtractorData()
@@ -193,7 +193,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param extractorData DOCUMENT ME!
      */
     public void setExtractorData(ExtractDataInterface extractorData)
@@ -205,7 +205,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public PipePublisher<Throwable> getPipeException()
@@ -217,7 +217,7 @@ public abstract class Extractor<X> implements ExtractorThreadInterface<X>
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param pipeException DOCUMENT ME!
      */
     public void setPipeException(PipePublisher<Throwable> pipeException)

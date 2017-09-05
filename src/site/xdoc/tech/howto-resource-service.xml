@@ -36,7 +36,7 @@
                           <li>
                               Configuration facilities of the service (name, cache activation, ... )
                               based upon property files.
-                              
+
                           </li>
                       </ul>
                   </p>
@@ -177,7 +177,7 @@ public class MyResourceLoader implements ResourceLoader
                  <p>
                      Here is a centralized view of cache management of the Nabla's Administration module
                      including Resource Services.
-                 </p>    
+                 </p>
                  <p>
                       <center>
                           <img src="images/manage_caches.gif" />

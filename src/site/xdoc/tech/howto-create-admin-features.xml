@@ -68,7 +68,7 @@
             to which it is associated (parameter <b>plugin_name</b>). This allows two plugins to
             share same features in different contexts.
          </p>
-         
+
     <subsection name="Definition of an administrative feature in the plugin's configuration file">
         <p>
            To install a new Nabla feature it must be packaged into

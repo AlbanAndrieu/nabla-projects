@@ -16,10 +16,10 @@
 	<description>Java core configuration of Etl</description>
 
 	<build>
-		<!-- The next execution of the mvn process-resources command will put the 
+		<!-- The next execution of the mvn process-resources command will put the
 			new property value into application.properties -->
 		<filters>
-			<!-- Sometimes a resource file will need to contain a value that can be 
+			<!-- Sometimes a resource file will need to contain a value that can be
 				supplied at build time, only -->
 			<filter>src/main/resources/filters/filter.properties</filter>
 		</filters>
@@ -78,8 +78,8 @@
 				</excludes>
 			</testResource>
 			<!-- Preventing Filtering of Binary Resources -->
-			<!-- <testResource> <directory>${basedir}/src/test/resources</directory> 
-				<includes> <include>images/**</include> <include>**/*.xml</include> <include>**/*.properties</include> 
+			<!-- <testResource> <directory>${basedir}/src/test/resources</directory>
+				<includes> <include>images/**</include> <include>**/*.xml</include> <include>**/*.properties</include>
 				<include>**/*.dtd</include> <include>**/*.vm</include> </includes> </testResource> -->
 			<testResource>
 				<directory>${basedir}/src/webapp/WEB-INF</directory>

@@ -8,13 +8,13 @@
   <body>
     <section name="Create a new portlet">
         <p>
-            The Nabla pages are composed of portlets. It is 
-            possible to define new types of portlet which 
+            The Nabla pages are composed of portlets. It is
+            possible to define new types of portlet which
             will then be available for building pages
             and enrich with new features. The new portlets must be
             packaged with optional administrative features, in the
             form of Plugins [<a href="howto-create-plugins.html">HOWTO - Les plugins</a>].
-        
+
         </p>
         <p>
             This document intends to describe the main steps in order
@@ -35,14 +35,14 @@
           the package <code>com.nabla.project.plugins.&lt;myplugin&gt;.web.portlet</code>
           which is described as the following :
         </p>
-        
+
         <subsection name="&lt;type&gt;Portlet.java">
             <p>
               It must derive from the abstract class : <code>Portlet</code> which
               itself implements the interface :<code>XmlContent</code> (package
                <code>com.nabla.project.plugins.&lt;myplugin&gt;.business</code>).
             </p>
-            
+
             <p>
                <table>
                   <tr>
@@ -77,7 +77,7 @@
                <ul>
                    <li><code>public void update()</code></li>
                    <li><code>public void remove()</code></li>
-                   which call for the update methods found in the corresponding DAO 
+                   which call for the update methods found in the corresponding DAO
                    and also for the accessors of the new portlet type.
                </ul>
             </p>
@@ -116,7 +116,7 @@
                </ul>
             </p>
         </subsection>
-        
+
         <subsection name="&lt;type&gt;PortletDAO.java">
             <p>
               It must implement the interface <strong>InterfaceDAO</strong>.
@@ -132,7 +132,7 @@
               </table>
            </p>
            <p>
-           
+
               It must implement the data access methods as described below :
            </p>
            <p>
@@ -145,11 +145,11 @@
            </p>
            <p>
               Apart these essential methods, the developer is free to add
-              to this class any data access methods required to manage 
+              to this class any data access methods required to manage
               a new portlet.
            </p>
         </subsection>
-        
+
         <subsection name="&lt;type&gt;PortletJspBean.java">
            <p>
               It must derive from the class : <strong>PortletJspBean</strong> which itself implements the
@@ -166,7 +166,7 @@
               </table>
            </p>
            <p>
-              This implies implementing the following methods for managing 
+              This implies implementing the following methods for managing
               the portlet forms  :
            </p>
            <p>
@@ -191,7 +191,7 @@
            </p>
            <p>
               Finally, this class can contain other methods for portlets requiring
-              further processing (for example, the saving process of a file in 
+              further processing (for example, the saving process of a file in
               a Download type : DownloadFilePortlet)
            </p>
            <p>
@@ -204,11 +204,11 @@
               The processing is thus the same for all portlet types.
            </p>
         </subsection>
-            
+
         <subsection name="JSP">
             <p>
                The four important JSPs in the management of a new portlet are :
-               
+
                <ul>
                <li><code>CreatePortlet&lt;type&gt;.jsp</code></li>
                <li><code>DoCreatePortlet&lt;type&gt;.jsp</code></li>
@@ -270,7 +270,7 @@
 %&gt;
 &lt;%@ include file="../../AdminFooter.jsp" %&gt;
 </pre>
-               </div>  
+               </div>
              </p>
              <p>
                 <strong>Example de JSP used for processing : <i>DoCreatePortlet&lt;Type&gt;</i></strong>
@@ -297,17 +297,17 @@
             </p>
         </subsection>
      </section>
-     
-     <section name="The other files"> 
+
+     <section name="The other files">
             <subsection name="XSL style sheets">
                 <p>
                    Many style sheets are developed by the management of the
                    display of a new portlet type.
                 </p>
                 <p>
-                    A first category corresponds to the displaying of the 
+                    A first category corresponds to the displaying of the
                     portlet. By convention, name name is :
-                </p>   
+                </p>
                 <p>
                      <strong>portlet_&lt;type&gt;_&lt;suffixe&gt;.xsl</strong> where
                      &lt;suffixe&gt; specifies the style sheet
@@ -331,13 +331,13 @@
                 <p>
                    All these style sheets must be stored in database from the
                    administration interface (cf Database paragraph )
-                   
+
                 </p>
             </subsection>
-            
+
             <subsection name="HTML Templates">
                 <p>
-                   The HTML forms of a new portlet and its modification are 
+                   The HTML forms of a new portlet and its modification are
                    seperated files :
                 </p>
                 <p>
@@ -413,7 +413,7 @@
                    mandatory.
                 </p>
                 <p>
-                   Nevertherless, the javascript <code>Submit()</code> method must be 
+                   Nevertherless, the javascript <code>Submit()</code> method must be
                    defined as it is required for form validation.
                 </p>
                 <p>
@@ -422,16 +422,16 @@
                 <p>
                    -use the standards respected by most portlets :
                   <code>script_create_portlet.html</code> and
-                   <code>script_modify_portlet.html</code> (in the 
+                   <code>script_modify_portlet.html</code> (in the
                    Web-inf/templates/admin/portlet/ folder )
                 </p>
                 <p>
-                   
-                   - or define the method in the specific form (contrarily to 
+
+                   - or define the method in the specific form (contrarily to
                    HTML portlet).
                 </p>
             </subsection>
-            
+
             <subsection name="Database">
                 <p>
                    The modification in the database concerns 4 tables :
@@ -492,7 +492,7 @@
                         The data is initialised in the database during installation.
                    </p>
                    <p>
-                        The configuration of the plugin will thus contain information in 
+                        The configuration of the plugin will thus contain information in
                         the form
                    </p>
                    <p>
@@ -509,7 +509,7 @@
                    <p>
                        Table <strong>style</strong> :
                    </p>
-                   <p>    
+                   <p>
                        A style corresponding to the new portlet type must e defined.
                        This is done by using Nabla administration :
                        : <strong>Style Management</strong>.
@@ -519,7 +519,7 @@
                           Tables <strong>stylesheet</strong> and <strong>style_mode_stylesheet</strong> :
                     </p>
                     <p>
-                          Administration interface of Nabla :<strong>XSL stylesheets management</strong> 
+                          Administration interface of Nabla :<strong>XSL stylesheets management</strong>
                           allows definition of new styles and to link them to those stored into the database.
                           All the stylesheets developed according to paragraph : XSL stylesheets must be stored
                           by using this interface.

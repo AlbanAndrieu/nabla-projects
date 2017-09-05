@@ -33,7 +33,7 @@
 						url validation target (défault : "_self"),
 					</li>
 					<li>
-						type of message (information, questionn, 
+						type of message (information, questionn,
 						error, warning, confirmation, stop),
 					</li>
 					<li>Cancel button (true of false).</li>
@@ -52,8 +52,8 @@
 
 				<subsection name="SiteMessageService">
 					<p>
-						SiteMessageService provide a method setMessage() 
-						to display site messages. To display Site message, 
+						SiteMessageService provide a method setMessage()
+						to display site messages. To display Site message,
 						an exception SiteMessageException is thrown.
 						Example to use setMessage() method :
 						<div class="source">
@@ -84,7 +84,7 @@ try
 }
 catch ( SiteMessageException lme )
 {
-	request.getRequestDispatcher( "/" + 
+	request.getRequestDispatcher( "/" +
 		AppPathService.getPortalUrl(  ) ).forward( request, response );
 }
 								</pre>

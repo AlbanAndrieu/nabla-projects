@@ -98,7 +98,7 @@ public class StateMachine implements java.io.Serializable {
 
 /**
      * Creates a new StateMachine object.
-     * 
+     *
      * @param ccejb DOCUMENT ME!
      * @param sc DOCUMENT ME!
      */

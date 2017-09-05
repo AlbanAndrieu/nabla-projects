@@ -25,14 +25,14 @@
                      </ul>
                   </p>
               </subsection>
-              
+
               <subsection name="Content restitution schema ">
                   <p>
                      The following schema is a simple representation of the content restitution process :
                   </p>
                   <p>
                      <center>
-                          <img src="images/architecture001.gif" />   
+                          <img src="images/architecture001.gif" />
                      </center>
                   </p>
                   <p>
@@ -42,7 +42,7 @@
                       The presentation bean associated to a JSP, PortalJspBean, dispatches the calls from the content services with
                       respect to the parameters of the request.                  </p>
                   <p>
-                      If the page is requested, the bean calls the PageService which will either provide the page if it is in the cache or 
+                      If the page is requested, the bean calls the PageService which will either provide the page if it is in the cache or
                       build it.
                   </p>
                   <p>
@@ -60,7 +60,7 @@
                   </p>
                   <p>
                      <center>
-                          <img src="images/architecture002.gif" />   
+                          <img src="images/architecture002.gif" />
                      </center>
                   </p>
                   <p>
@@ -79,14 +79,14 @@
                      is updated in the database.
                   </p>
                   <p>
-                      The indexing service, which is a background task, detects the page modified by looking at the last modification date 
+                      The indexing service, which is a background task, detects the page modified by looking at the last modification date
                       and indexes it another time by requesting its content through PageService.
                   </p>
               </subsection>
           </section>
-          
+
           <section name="Software architecture using blocks : software layers description">
-              
+
               <subsection name="1. Presentation layer">
                   <p>
                      The components realizing the presentation and the user interface are gathered into the <strong>com.nabla.project.portal.web</strong> package
@@ -102,7 +102,7 @@
                     </ul>
                   </p>
                </subsection>
-                  
+
                <subsection name="1.1 The JSP">
                   <p>
                       The role attributed to JSP is limited strictly to the page structure and navigation.
@@ -115,7 +115,7 @@
                      <ul>
                          <li>The directive for redirection to the error page : <code>errorPage</code></li>
                          <li>The directive for static objects inclusion : (ex : HTML code HTML to include a style sheet)</li>
-      
+
                          <li>conditional branching(<code>&lt;jsp:forward&gt;</code> )</li>
                      </ul>
                   </p>
@@ -125,8 +125,8 @@
                   <p>
                      The JSP must all contain a JSP header and a JSP footer.
                      This enables integration of all pages from preprocessing and post processing
-                     without needing to modify all the pages   
-                     (ex : timeout test of session, header and footer of HTML page 
+                     without needing to modify all the pages
+                     (ex : timeout test of session, header and footer of HTML page
                      , link towards a style sheet , addition of statistical processing, ...).
                   </p>
                   <p>
@@ -159,13 +159,13 @@
                               <td>AdminFooter.jsp</td>
                               <td>End of standard page</td>
                           </tr>
-                      </table>       
+                      </table>
               </subsection>
-              
+
               <subsection name="1.2 JspBeans">
                   <p>
                      These beans manages the presentation of the data produced by business objects.
-                     They generate HTML code which is inserted in the JSP. These components are found in  
+                     They generate HTML code which is inserted in the JSP. These components are found in
                      <code>com.nabla.project.portal.web.</code> package and have a <em>JspBean</em> suffix
                      to differ them from the business objects.
                   </p>
@@ -180,14 +180,14 @@
                      must be prefixed by " <code>Do</code> " and return the URL of a page which depends on processing result.
                   </p>
               </subsection>
-              
+
               <subsection name="1.3 Templates">
                   <p>
                      The HTML templates are .html containing HTML code and perhaps Javascript.
-                     The files must obey to XHTML 1.0 transitional recommendation at <a href="http://www.w3.org/">W3C</a>             
+                     The files must obey to XHTML 1.0 transitional recommendation at <a href="http://www.w3.org/">W3C</a>
                   </p>
                   <p>
-                     The elements to insert in these blocks are generated by bookmarks represented as<code>@variable@</code>. 
+                     The elements to insert in these blocks are generated by bookmarks represented as<code>@variable@</code>.
                      The advantage of these templates is that it can be shared by many JSPs and be modified by web designers without any impact on processing.
                      The templates are stored in the <em>/WEB-INF/templates</em> folder.
                      The base classes of template management are part of the our framework .
@@ -199,7 +199,7 @@
                      and Mac browsers (IE 4.5, Netscape 6, Safari, Mozilla Firefox) must be achieved.
                   </p>
               </subsection>
-              
+
               <subsection name="2. Business Layer">
                   <p>
                      The business layer is constituted with various classes of the business objects.
@@ -215,7 +215,7 @@
                      <code>INSERT</code>), <code>drop</code> (<code>DELETE</code>).                </p>
                   <p>
                      In order to approach the design of EJBs, we use a "Home" class for each business object
-                     having a DAO. Similarly to EJBs,the purpose of these classes is to ensure proper management of 
+                     having a DAO. Similarly to EJBs,the purpose of these classes is to ensure proper management of
                      the business object instances.
                   </p>
                   <p>
@@ -227,7 +227,7 @@
                   </p>
                   <p>
                      To these methods that are found in the interface of Home classes of EJB entity, we will add the methods
-                     which usually corresponds to the actions generated by the EJB container. The Home object being the only 
+                     which usually corresponds to the actions generated by the EJB container. The Home object being the only
                      object having a DAO access, this ensures the modifications and deletions of entities in the database.
                   </p>
                   <p>
@@ -235,7 +235,7 @@
                      at the business.
                   </p>
                   <p>
-                     Here is the recapitulation of the interfaces of the different objects, with method links, reach and 
+                     Here is the recapitulation of the interfaces of the different objects, with method links, reach and
                      similarity with EJB entity beans :
                   </p>
                   <p>
@@ -346,7 +346,7 @@
                           </tr>
                           <tr>
                               <td>AppConnectionService</td>
-                              <td>Provides connections from  a pool 
+                              <td>Provides connections from  a pool
                                  The service can be parametrized to use its own pool or the application server's pool.</td>
                           </tr>
                           <tr>
@@ -366,11 +366,11 @@
                   </p>
                </subsection>
           </section>
-          
+
           <section name="Application files organization">
               <p>
                   The folder structure in the sources of Nabla core is defined as follows
-                  and integrates the J2EE specification Servlet 2.2. 
+                  and integrates the J2EE specification Servlet 2.2.
               </p>
               <subsection name="Core folder structure">
                   <p>
@@ -439,7 +439,7 @@
                                                 <li>Data Source</li>
                                                 <li>Number of open connections at the creation of the pool</li>
                                                 <li>Maximum number of connections per pool</li>
-                                            </ul>    
+                                            </ul>
                                         This file is used for an autonomous operation (without an application server).
                                         </li>
                                         <li>Other property files</li>
@@ -475,14 +475,14 @@
                           <tr>
                                 <td>&lt;webapp&gt;/WEB-INF/templates/admin and sub folders</td>
                                 <td>*.html</td>
-                                <td>The HTML models used for the dynamic construction of the pages. 
+                                <td>The HTML models used for the dynamic construction of the pages.
                                     It concerns the blocks of HTML code used by the beans for presentation
                                     of the administration module</td>
                           </tr>
                           <tr>
                                 <td>&lt;webapp&gt;/WEB-INF/templates/site and sub folder</td>
                                 <td>*.html</td>
-                                <td>The HTML models used for the dynamic construction of the pages. 
+                                <td>The HTML models used for the dynamic construction of the pages.
                                     It concerns the blocks of HTML code used by the beans for presentation
                                     of the site</td>
                           </tr>
@@ -507,12 +507,12 @@
                                 <td>The XSL style sheets used to shape the XML content in WAP mode</td>
                           </tr>
                       </table>
-                  </p>      
+                  </p>
               </subsection>
               <subsection name="Plugin folder structure ">
                   <p>
                       A plugin can need a large set of different files
-                      Here are the folders designated to hold the files. 
+                      Here are the folders designated to hold the files.
                   </p>
                    <p>
                       <table>
@@ -593,8 +593,7 @@
                           </tr>
                       </table>
                    </p>
-              </subsection>     
+              </subsection>
           </section>
       </body>
   </document>
-

@@ -22,7 +22,7 @@ import com.google.web.bindery.requestfactory.shared.ServiceLocator;
  * }
  * }
  * </code></pre>
- * 
+ *
  * @author Florian Sauter
  */
 public class SeamComponentServiceLocator implements ServiceLocator

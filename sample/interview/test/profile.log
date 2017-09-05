@@ -5,8 +5,8 @@
 [INFO]    task-segment: [help:active-profiles] (aggregator-style)
 [INFO] ------------------------------------------------------------------------
 [INFO] [help:active-profiles {execution: default-cli}]
-[INFO] 
-Active Profiles for Project 'com.nabla.project.sample.interview.test:test:jar:1.0': 
+[INFO]
+Active Profiles for Project 'com.nabla.project.sample.interview.test:test:jar:1.0':
 
 The following profiles are active:
 

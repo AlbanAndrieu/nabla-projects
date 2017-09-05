@@ -41,7 +41,7 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -57,7 +57,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getName()
@@ -69,7 +69,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param name DOCUMENT ME!
      */
     public void setName(String name)
@@ -81,7 +81,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public Perimeter getPerimeter()
@@ -93,7 +93,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param perimeter DOCUMENT ME!
      */
     public void setPerimeter(Perimeter perimeter)
@@ -105,7 +105,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public PipePublisher<X> getPipeOut()
@@ -117,7 +117,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param pipeOut DOCUMENT ME!
      */
     public void setPipeOut(PipePublisher<X> pipeOut)
@@ -129,7 +129,7 @@ public abstract class AbstractJavaExtractor<X> extends JdbcDaoSupport implements
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public int getCounter()

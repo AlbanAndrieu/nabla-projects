@@ -36,7 +36,7 @@
                                 <artifactId>tool</artifactId>
                                 <version>${project.version}</version>
                         </dependency>
-			
+
                         <dependency>
                                 <groupId>com.nabla.project.core.etl.core.core</groupId>
                                 <artifactId>core</artifactId>
@@ -52,7 +52,7 @@
                 </dependencies>
         </dependencyManagement>
         -->
-        
+
         <!-- Mailing lists are a great tool for keeping in touch with people about a project. Most mailing lists are for developers and users. -->
         <build>
                 <!--  Project version filters -->

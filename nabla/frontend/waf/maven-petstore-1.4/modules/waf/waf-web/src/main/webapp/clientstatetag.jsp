@@ -1,22 +1,22 @@
 <%--
  Copyright 2004 Sun Microsystems, Inc. All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
- 
+
  - Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
- 
+
  - Redistribution in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in
    the documentation and/or other materials provided with the
    distribution.
- 
+
  Neither the name of Sun Microsystems, Inc. or the names of
  contributors may be used to endorse or promote products derived
  from this software without specific prior written permission.
- 
+
  This software is provided "AS IS," without a warranty of any
  kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND
  WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
@@ -29,7 +29,7 @@
  PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF
  LIABILITY, ARISING OUT OF THE USE OF OR INABILITY TO USE SOFTWARE,
  EVEN IF SUN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
- 
+
  You acknowledge that Software is not designed, licensed or intended
  for use in the design, construction, operation or maintenance of
  any nuclear facility.
@@ -61,7 +61,7 @@ The graphic above describes how the client state tag may be used.
 For example an application needs to do some processing and return to the
 same page with the same data. An example is when the user chooses to
 change the language of the application. In which case the user will click on
-one of the flag images. The flag images are actually form submit buttons 
+one of the flag images. The flag images are actually form submit buttons
 which contain forms that have data encoded in the form variables. When
 the user clicks the image and action occurs in which the application locale
 which the user prefers to view the pages in is changed. After the action
@@ -73,7 +73,7 @@ in data that is kept in request parameters and request attributes (request
 scope data). In order to return to the place where the user was the information
 about where the user was must be stored.
 <br/><br/>
-The <b>client state tag</b> is responsible for creating the forms and the hidden 
+The <b>client state tag</b> is responsible for creating the forms and the hidden
 form data which has the request attributes which are <b>serializable</b>
 encoded in Base64 format. A future version of this tag may use plugable
 serialize/de-serialize for serializing the data. This would allow a user

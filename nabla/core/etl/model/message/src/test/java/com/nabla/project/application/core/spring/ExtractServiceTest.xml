@@ -8,17 +8,17 @@
 			</list>
 		</constructor-arg>
 	</bean>
-	
+
 	<bean id="xmlDiffTest" class="com.nabla.project.application.model.message.helpers.XmlDiffXPath" scope="prototype">
 		<constructor-arg type="java.util.List" index="0">
 			<list>
 				<value>/a\[[0-9]+\]/b\[[0-9]+\].*</value>
-				<value>/a\[[0-9]+\]/c\[[0-9]+\].*</value>				
+				<value>/a\[[0-9]+\]/c\[[0-9]+\].*</value>
 			</list>
 		</constructor-arg>
 	</bean>
 
-	
+
 	<bean id="xmlValidator" class="com.nabla.project.application.model.message.helpers.XmlValidator" scope="prototype">
 		<constructor-arg type="java.lang.String" index="0" value="..\xml\src\main\resources\A_XML_root.xsd"/>
 	</bean>

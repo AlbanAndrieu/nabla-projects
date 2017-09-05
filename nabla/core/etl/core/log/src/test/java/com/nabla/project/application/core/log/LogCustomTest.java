@@ -44,7 +44,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -64,7 +64,7 @@ public class LogCustomTest extends TestCase
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @throws Exception DOCUMENT ME!
      */
     public void testLog() throws Exception

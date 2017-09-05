@@ -35,10 +35,10 @@
 					Check the validity of a date typed by the user is simply a call to <a href="http://dev.nabla.paris.fr/nabla-core/fr/apidocs/fr/paris/nabla/util/date/DateUtil.html#formatDate(java.lang.String,%20java.util.Locale)">DateUil.formatDate(  )</a>.
 				</p>
 				<p>
-					The function returns a type Date if the date typed is valid or null otherwise. 
+					The function returns a type Date if the date typed is valid or null otherwise.
 				</p>
 			</subsection>
-			
+
 			<subsection name="Conversion to string">
 				<p>
 					To display a date, it's necessary to convert the date stored as a String. This conversion is done simply by using the following functions :
@@ -54,14 +54,14 @@
 				</ul>
 				<p>The display format corresponds to that described in the <a href="#Format">Format</a> section of this document.</p>
 			</subsection>
-			
+
 			<subsection name="Display">
 				<p>Display a date field in an html page can be decorated with a Javascript Calendar. Entering the date is being simplified.</p>
 				<p>The used Javascript calendar is the <a href="http://marcgrabanski.com/code/ui-datepicker/">jquery UI Datepicker</a>.</p>
 				<p>A set of <a href="http://freemarker.sourceforge.net/">Freemarker</a> macros is available for calling the calendar. These macros are loaded systematically for each template (Front and Back office), it's not necessary to include them.</p>
 				<p>These macros and their descriptions are available in the file <a href="http://dev.nabla.paris.fr/viewvc/portal/trunk/core/webapp/WEB-INF/templates/util/calendar/macro_datepicker.html?view=markup">webapp/WEB-INF/templates/util/calendar/macro_datepicker.html</a>.</p>
 				<em>Note : Datepicker macros can be called indifferently in the Front or Back Office templates.</em>
-				
+
 				<h4>Integration example</h4>
 					<p>Examples of available macros :</p>
 					<ul>
@@ -96,4 +96,3 @@
 		</section>
 	</body>
 </document>
-

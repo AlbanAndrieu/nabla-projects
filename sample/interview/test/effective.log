@@ -5,7 +5,7 @@
 [INFO]    task-segment: [help:effective-pom] (aggregator-style)
 [INFO] ------------------------------------------------------------------------
 [INFO] [help:effective-pom {execution: default-cli}]
-[INFO] 
+[INFO]
 ************************************************************************************
 Effective POM for project 'com.nabla.project.sample.interview.test:test:jar:1.0'
 ************************************************************************************

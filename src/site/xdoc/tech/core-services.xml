@@ -71,10 +71,10 @@ private static final String BOOKMARK_NAME = "@name@";
     String strBaseUrl = AppPathService.getBaseUrl( request );
 
     ...
-    
+
     // Get the WebApp absolute path ( i.e.: "/usr/local/tomcat/webapps/nabla" )
     String strWebAppPath = AppPathService.getWebAppPath();
-   
+
 }                                </pre>
                               </div>
                     </p>
@@ -94,9 +94,9 @@ private static final String BOOKMARK_NAME = "@name@";
 {
     Connection connection = AppConnectionService.getConnection();
     ...
-    
+
     AppConnectionService.freeConnection();
-   
+
 }                                </pre>
                               </div>
                     </p>

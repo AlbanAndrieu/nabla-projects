@@ -12,10 +12,10 @@
           can be generated with the help <a href="http://maven.apache.org/" target="_blank">Maven</a>.
        </p>
        <p>
-          A limited number of tags are used, to reach a uniform page-setting in 
+          A limited number of tags are used, to reach a uniform page-setting in
           both formats.
        </p>
-           
+
        <subsection name="Create a documentation : Base rules">
            <p>
                The encoding used is UTF-8, and the chapters are in <code>section</code> and <code>subsection</code>.
@@ -31,7 +31,7 @@
                The images must measure 780px large ( Centered image with a white background), and be in <strong><code>.gif</code></strong> format.
            </p>
        </subsection>
-       
+
        <subsection name="Examples of implementation">
            <p>
               Global structure of file :
@@ -47,7 +47,7 @@
     &lt;/title&gt;
    &lt;/properties&gt;
    &lt;body&gt;
-   
+
    &lt;section name="Section Title 1"&gt;
                ...................
    &lt;/section&gt;
@@ -55,7 +55,7 @@
   &lt;/body&gt;
   &lt;/document&gt;</pre>
                </div>
-          </p>               
+          </p>
           <p>
              <br />
           </p>
@@ -63,11 +63,11 @@
              A document may contain many sections.
           </p>
           <p>
-             A section can contain formatted text by a paragraph(<code>&lt;p&gt;</code>), 
+             A section can contain formatted text by a paragraph(<code>&lt;p&gt;</code>),
              but also one or more sections
           </p>
-          <p> 
-              Example : 
+          <p>
+              Example :
           </p>
           <p>
              <div class="source">
@@ -81,40 +81,40 @@
            &lt;p&gt;
               text ...
            &lt;/p&gt;
-        &lt;/subsection&gt;           
-        
+        &lt;/subsection&gt;
+
         &lt;subsection name="SubSection 2"&gt;
            &lt;p&gt;
               text ...
            &lt;/p&gt;
-        &lt;/subsection&gt;           
+        &lt;/subsection&gt;
 
    &lt;/section&gt;</pre>
                </div>
            </p>
            <p>
-              The result is as follows : 
-           </p>          
+              The result is as follows :
+           </p>
            <p>
                <section name="Section Title 1">
                     <p>
                        Introduction to Section 1
                     </p>
-            
+
                     <subsection name="SubSection 1">
                        <p>
                           texte ...
                        </p>
                     </subsection>
-                    
+
                     <subsection name="SubSection 2">
                        <p>
                           texte ...
                        </p>
                     </subsection>
-            
+
                </section>
-           </p>   
+           </p>
           <p>
              <br />
           </p>
@@ -132,7 +132,7 @@
               &lt;li&gt;example of list 2&lt;/li&gt;
            &lt;/ul&gt;
        &lt;/p&gt;
-       
+
        &lt;p&gt;
           &lt;ol&gt;
               &lt;li&gt;example of numbered list 1&lt;/li&gt;
@@ -142,7 +142,7 @@
               </div>
           </p>
           <p>
-             Result : 
+             Result :
           </p>
            <p>
               <ul>
@@ -160,10 +160,10 @@
              <br />
           </p>
           <p>
-          </p>           
+          </p>
           <p>
              The text can be formatted with tags of type <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;code&gt;</code>
-          </p>                
+          </p>
            <p>
               <div class="source">
                   <pre>
@@ -176,13 +176,13 @@
    &lt;p&gt;
        &lt;em&gt;em text format&lt;/em&gt;
    &lt;/p&gt;
-                  </pre>           
+                  </pre>
               </div>
           </p>
           <p>
-             Result : 
+             Result :
           </p>
-          
+
           <p>
              <ul>
                  <li><code>code text format</code></li>
@@ -194,14 +194,14 @@
              <br />
           </p>
           <p>
-          </p>          
+          </p>
           <p>
-             Examples of source code can be placed by using <code>&lt;pre&gt;</code> : 
+             Examples of source code can be placed by using <code>&lt;pre&gt;</code> :
           </p>
           <p>
              <div class="source">
                   <pre>
-   &lt;p&gt;                       
+   &lt;p&gt;
        &lt;div class="source"&gt;
 &lt;pre&gt;
    &lt;application&gt;
@@ -213,7 +213,7 @@
    &lt;/p&gt;
                    </pre>
                </div>
-           </p>      
+           </p>
            <p>
               <strong>Notice :</strong> For proper rendering, the <code>&lt;pre&gt;</code> tag should be
               stuck to the left and ignore indentation of the xml file.
@@ -221,8 +221,8 @@
            <p>
               The result is :
            </p>
-           
-           <p>                       
+
+           <p>
                 <div class="source">
 <pre>
 &lt;application&gt;
@@ -236,7 +236,7 @@
              <br />
           </p>
           <p>
-          </p>          
+          </p>
             <p>
               To insert a table, the syntax is as follows :
            </p>
@@ -278,7 +278,7 @@
           <p>
           </p>
           <p>
-              To view a screen capture :  
+              To view a screen capture :
            </p>
            <p>
               <div class="source">
@@ -294,11 +294,11 @@
              The tag <code>&lt;center&gt;</code> is intepreted while the HTML generation phase only.
           </p>
           <p>
-             To prevent image deformations of in the PDF version, create a 780px width image( for an A4 output), 
+             To prevent image deformations of in the PDF version, create a 780px width image( for an A4 output),
              the screen capture will be centered at this width.
           </p>
           <p>
-             The result is : 
+             The result is :
           </p>
           <p>
              <center>
@@ -309,5 +309,3 @@
    </section>
   </body>
   </document>
-  
-

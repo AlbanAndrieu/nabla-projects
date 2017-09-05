@@ -32,7 +32,7 @@ import com.google.gwt.user.server.rpc.impl.ServerSerializationStreamWriter;
 
 /**
  * Abstract base class for GWT 1.5 integration.
- * 
+ *
  * @author Shane Bryzak
  */
 public abstract class GWTService extends AbstractResource implements SerializationPolicyProvider
@@ -66,7 +66,7 @@ public abstract class GWTService extends AbstractResource implements Serializati
 
     /**
      * This is called internally.
-     * 
+     *
      * @see RemoteServiceServlet#doPost
      */
     @Override

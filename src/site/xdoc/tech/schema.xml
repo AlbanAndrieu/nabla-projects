@@ -7,7 +7,7 @@
    </properties>
    <body>
     <section name="Schéma de la base mynabla_users">
-        
+
 
         <subsection name="nabla_group">
             <p>
@@ -37,9 +37,9 @@
 		               <td>&#160;</td>
 	                </tr>
                  </table>
-            </p>    
+            </p>
         </subsection>
-        
+
         <subsection name="nabla_group_role">
             <p>
                 <table border="1">
@@ -69,7 +69,7 @@
 	                </tr>
                  </table>
                </p>
-           </subsection>        
+           </subsection>
 
            <subsection name="nabla_role">
                <p>
@@ -100,8 +100,8 @@
 	                   </tr>
                    </table>
                </p>
-           </subsection>    
-              
+           </subsection>
+
            <subsection name="nabla_user">
                <p>
                    <table border="1">
@@ -162,11 +162,11 @@
 	                       <td>&#160;</td>
                        </tr>
                    </table>
-               </p>    
+               </p>
            </subsection>
-                   
+
            <subsection name="nabla_user_group">
-               <p> 
+               <p>
                    <table border="1">
                        <tr>
 	                       <th>Field</th>
@@ -195,7 +195,7 @@
                    </table>
                </p>
            </subsection>
-           
+
            <subsection name="nabla_user_role">
                <p>
                    <table border="1">
@@ -227,7 +227,6 @@
                </p>
            </subsection>
 
-       </section>    
+       </section>
    </body>
 </document>
-

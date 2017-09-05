@@ -10,9 +10,9 @@
           <subsection name="Overview">
           <p>
               Automatised unit tests enables to rapidly control the source code.
-              These test allow to validate various requirements, business rules and 
+              These test allow to validate various requirements, business rules and
               to control stability across time(non regression).
-              The framework used to accomplish these tests is JUnit 
+              The framework used to accomplish these tests is JUnit
               (<a href="http://www.junit.org">http://www.junit.org</a>)
           </p>
           </subsection>
@@ -38,10 +38,10 @@
               The class <code>NablaTestCase</code> extends the abstract <code>TestCase</code>
               of the JUnit framework by initializing a set of Nabla services in the
               method implementation <code>setUp()</code>. It is thus possible, for all
-              tests methods to access Nabla services : 
+              tests methods to access Nabla services :
               <code>AppTemplateService</code>, <code>AppPropertiesService</code>,
               <code>AppConnectionService</code>, etc.
-             
+
           </p>
           <p>
               Each test method inside a class is prefixed by "test" as imposed by the framework.
@@ -53,13 +53,13 @@
               To accomplish some tests, substitution(<i>Mock objects</i>) objects are necessary to simulate real objects.
               Example :
               In realizing the methods tests receiving a request object
-              <code>request</code> as a parameter, 
-              it is impossible so simulate a HTTP client to provide this object 
+              <code>request</code> as a parameter,
+              it is impossible so simulate a HTTP client to provide this object
               <code>request</code>.
-              The class <code>MockHttpServletRequest</code>, implements the interface 
+              The class <code>MockHttpServletRequest</code>, implements the interface
               <code>HttpServletRequest</code> and has accessors allowing it to add
               parameters, attributes, sessions and cookies so as to test a real situation.
-             
+
           </p>
           <div class="source">
               <pre>
@@ -80,7 +80,7 @@ public class MyClassTest extends NablaTestCase
         Cookie[] cookies = { cookieName };
         request.setMokeCookies( cookies );
         assertEquals( getNameFromCookie( request ) , "name" );
-    }  
+    }
     ...
 }</pre>
           </div>
@@ -91,9 +91,9 @@ public class MyClassTest extends NablaTestCase
               For Nabla,a class <code>AllTests</code> is realized at each level of the package
               and provides a static method <code>suite()</code> which returns TestSuite
               containing all the tests of the package and the suites of the sub-packages.
-              This mechanism enables launching of tests at all level of the package, 
+              This mechanism enables launching of tests at all level of the package,
               by considering all tests from the sub-packages.
-              
+
           </p>
           <p>
               Here is an example of the <code>AllTests</code> class implementation
@@ -118,20 +118,20 @@ public final class AllTests
         TestSuite suite = new TestSuite( "Test of the package com.nabla.project.plugins.myplugin" );
 
         //$JUnit-BEGIN$
-        // Add tests of the current package 
+        // Add tests of the current package
         suite.addTest( new TestSuite( MyClassTest.class ) );
-        
+
         // Add tests of sublevel packages
         suite.addTest( com.nabla.project.plugins.myplugin.business.AllTests.suite(  ) );
         suite.addTest( com.nabla.project.plugins.myplugin.web.AllTests.suite(  ) );
-    
+
         //$JUnit-END$
         return suite;
     }
 }             </pre>
           </div>
 
-          
+
           </subsection>
           </section>
       </body>

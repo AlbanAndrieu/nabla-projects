@@ -3,7 +3,7 @@
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
 
 	<bean id="defaultAbstractConfiguration" class="com.nabla.project.application.core.spring.AbstractConfig" abstract="true"/>
-	
+
 	<bean id="defaultConfiguration" class="com.nabla.project.application.core.spring.Config" parent="defaultAbstractConfiguration" lazy-init="true"/>
 
 </beans>

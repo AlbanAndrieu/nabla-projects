@@ -26,17 +26,17 @@
                              gives access to the the user interface of the object to be inserted ;
                         </li>
                         <li>
-                             An <code>LinkService</code> interface modelizing the link insertion Services 
-                             and providing a method returning the <code>LinkServiceSelectionBean</code> 
+                             An <code>LinkService</code> interface modelizing the link insertion Services
+                             and providing a method returning the <code>LinkServiceSelectionBean</code>
                              selection class;
                         </li>
                         <li>
                              A <code>HtmlService</code> interface modelizing the HTML code insertion services
-                             and providing a method returning the  
+                             and providing a method returning the
                              <code>HtmlServiceSelectionBean</code> selection class;
                         </li>
                         <li>
-                              abstract classes,<code>DefaultLinkService</code> 
+                              abstract classes,<code>DefaultLinkService</code>
                              and <code>DefaultHtmlService</code>, facilitating implementation
                              of the 2 interfaces above.
                         </li>
@@ -52,7 +52,7 @@
                     a single service : InsertServiceManager.
                 </p>
                 <p>
-                    Methods allowing fetching seperately  
+                    Methods allowing fetching seperately
                     « HtmlService » , « LinkService » or all InsertServices.
                 </p>
             </subsection>
@@ -62,7 +62,7 @@
                     in an HTML editor is done through a popup window.
                 </p>
                 <p>
-                    This allows to keep user session and avoids persisting data , 
+                    This allows to keep user session and avoids persisting data ,
                     already entered (saving data in the HTML editor is performed
                     before calling the insertion service  ).
                 </p>
@@ -83,11 +83,11 @@
             <subsection name="Saving services">
                 <p>
                     Implementations of InsertService are saved on plugin loading.
-                    
+
                     A &lt;html-service&gt; (link-service) section must be added in
                     the plugin'sconfiguration file :
-                </p>    
-                <p>    
+                </p>
+                <p>
                     <div class="source">
                         <pre>
 &lt;!-- Links Service --&gt;
@@ -102,18 +102,18 @@
             </subsection>
             <subsection name="Extension of DefaultHTMLService (or DefaultLinkService)">
                 <p>
-                    Extend <code>DefaultHTMLService</code> (resp. DefaultLinkService) 
+                    Extend <code>DefaultHTMLService</code> (resp. DefaultLinkService)
                     by implementing <code>getPluginName</code> method :
                 </p>
                 <p>
                     <div class="source">
                         <pre>
-public class MyHtmlService extends DefaultHtmlService 
+public class MyHtmlService extends DefaultHtmlService
 {
     /** The plugin name. */
     private static final String PLUGIN_NAME = "myhtmlservice";
 
-    public String getPluginName() 
+    public String getPluginName()
     {
         return PLUGIN_NAME;
     }
@@ -123,11 +123,11 @@ public class MyHtmlService extends DefaultHtmlService
                 </p>
             </subsection>
 
- 
+
             <subsection name="Implementation of HtmlServiceSelectionBean (or LinkServiceSelectionBean)">
                 <p>
                     A JSPBean, implementing the HtmlServiceSelectionBean's interface and containing a getHtmlSelectorUI() method, is needed.
-                    
+
                 </p>
                 <p>
                     <code>ImageLibraryJspBean</code> example for ImageLibrary plugin.
@@ -152,8 +152,8 @@ if (opener != null)
    // The caller must provide an insert_html method
    opener.insert_html(_buffer);
    window.close();
-} 
-else 
+}
+else
 {
    alert("HTML editor is not accessible!" );
 }
@@ -161,7 +161,7 @@ else
                     </div>
                 </p>
             </subsection>
- 
+
             <subsection name="Using a service">
                 <p>
                     An example of InsertServide is given in the HTML plugin,
@@ -171,9 +171,9 @@ else
             <subsection name="Submitting a link to insertion service">
                 <p>
                     Calling the <code>GetAvailableServices.jsp</code> JSP,
-                    by using ,for example, the following code : 
+                    by using ,for example, the following code :
                 </p>
-                <p> 
+                <p>
                     <div class="source">
                         <pre>
 function create_insert_window()

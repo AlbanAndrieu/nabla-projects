@@ -27,7 +27,7 @@
 	<xs:import namespace="urn:nabla:A_XML_TradingGeneric:1_0_0"
 		schemaLocation="../A_XML_TradingGeneric/A_XML_trading_generic.xsd" />
 	<!-- *********************************************** -->
-	<!--*** Version attribute - COMMON for all generic models around the Trade/Product 
+	<!--*** Version attribute - COMMON for all generic models around the Trade/Product
 		models *** -->
 	<xs:attributeGroup name="XML_TradeVersion">
 		<xs:attribute name="version" type="xs:string" use="required"

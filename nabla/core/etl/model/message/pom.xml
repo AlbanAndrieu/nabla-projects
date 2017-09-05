@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-		
+
 	<parent>
 		<groupId>com.nabla.project.core.etl.model</groupId>
 		<artifactId>model</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
-	
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.nabla.project.core.etl.model.message</groupId>
-	<packaging>jar</packaging>	
+	<packaging>jar</packaging>
 	<artifactId>message</artifactId>
-	<name>Etl Message</name>	
+	<name>Etl Message</name>
 	<description>Implementation using Jaxb java objects to marshall and unmarshal XML</description>
 
 	<dependencies>
@@ -43,7 +43,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<!-- Dependency with the interfaces -->
 		<dependency>
 			<groupId>com.nabla.project.core.etl.core.api</groupId>
@@ -93,7 +93,7 @@
 			<version>${project.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.nabla.project.core.etl.core.pipe</groupId>
 			<artifactId>pipe</artifactId>
@@ -102,7 +102,7 @@
 			<classifier>tests</classifier>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.nabla.project.core.etl.core.flow</groupId>
 			<artifactId>flow</artifactId>
@@ -110,8 +110,8 @@
 			<type>test-jar</type>
 			<classifier>tests</classifier>
 			<scope>test</scope>
-		</dependency>		
-		
+		</dependency>
+
 		<dependency>
 			<groupId>com.nabla.project.core.etl.core.spring</groupId>
 			<artifactId>spring</artifactId>
@@ -119,9 +119,9 @@
 			<type>test-jar</type>
 			<classifier>tests</classifier>
 			<scope>test</scope>
-		</dependency>				
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<testResources>
 			<testResource>
@@ -140,7 +140,7 @@
 				</includes>
 			</testResource>
 		</testResources>
-			
+
 		<plugins>
 			<!-- allow to create a single jar with all dependencies -->
 			<!-- only use for tests and not in production -->
@@ -153,8 +153,8 @@
 					<archive>
 						<manifest>
 							<mainClass>com.nabla.project.application.api.ExtractService.FullExtract</mainClass>
-							<!-- 
-								<mainClass>com.nabla.project.application.api.ExtractService.test.UnitaryMappingTests</mainClass>                                  
+							<!--
+								<mainClass>com.nabla.project.application.api.ExtractService.test.UnitaryMappingTests</mainClass>
 								<mainClass>com.nabla.project.application.api.ExtractService.test.GlobaleMappingTests</mainClass>
 								<mainClass>com.nabla.project.application.api.ExtractService.test.PerformanceTest</mainClass>
 							-->
@@ -172,7 +172,7 @@
 			                <!-- Enable or disable JUnit tests -->
 			                <skip>true</skip>
 			        </configuration>
-			</plugin>			
+			</plugin>
 		</plugins>
-	</build>	
+	</build>
 </project>

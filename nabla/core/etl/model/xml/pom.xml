@@ -44,7 +44,7 @@
         -->
 
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<!-- call external ant task to generate jaxb classes -->
@@ -107,15 +107,15 @@
 		        </archive>
 		      </configuration>
 		    </plugin>
-		    
+
 		    <plugin>
         	        <groupId>org.apache.felix</groupId>
         	        <artifactId>maven-bundle-plugin</artifactId>
-        	    </plugin>                
+        	    </plugin>
 		</plugins>
 	</build>
-	
+
         <properties>
             <bundle.namespace>com.nabla.project.application.model</bundle.namespace>
-        </properties>	
+        </properties>
 </project>

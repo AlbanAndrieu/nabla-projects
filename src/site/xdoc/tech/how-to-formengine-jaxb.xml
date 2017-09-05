@@ -20,7 +20,7 @@
 
 				<subsection name="Le nom des nœuds et des attributs">
                                     <p>
-                                        Lors de la génération des classes Java, les nœuds et les attributs sont automatiquement renommés pour satisfaire les règles de nommage Java : <code>NomClasse</code> pour une classe et <code>nomMethode</code> pour une méthode. 
+                                        Lors de la génération des classes Java, les nœuds et les attributs sont automatiquement renommés pour satisfaire les règles de nommage Java : <code>NomClasse</code> pour une classe et <code>nomMethode</code> pour une méthode.
                                     </p>
                                     <p>
                                         Ainsi les nœuds et attributs contenant un underscore ou un tiret sont transformés :
@@ -50,7 +50,7 @@
                                         </table>
                                     </p>
                                     <p>
-                                        Lors de l'écriture du schéma, il est cependant recommandé de prendre garde aux risques de collisions dans les noms. Il existe 2 types de collisions possibles : 
+                                        Lors de l'écriture du schéma, il est cependant recommandé de prendre garde aux risques de collisions dans les noms. Il existe 2 types de collisions possibles :
                                     </p>
                                     <p>
                                         <ul>
@@ -71,7 +71,7 @@
 				<subsection name="Les règles qui fournissent le meilleur code">
 					<p>
                                             <strong>1. Minimiser le nombre de classes générées</strong>
-					</p>	
+					</p>
 					<p>
                                             Dans le schéma Xsd, il est possible de rendre identiques le nom de l'élément et le nom du type qu'il contient (pour les types complexes). Ceci permet de diviser par 2 le nombre de classes générées.
 					</p>
@@ -95,7 +95,7 @@
 					</p>
 					<p>
 						<strong>2. Gérer la forme du code Xml généré par un marshalling partiel</strong>
-					</p>	
+					</p>
 					<p>
 						Cependant, ceci peut poser des problèmes pour le marshalling partiel, c'est-à-dire lorsqu'on veut générer le code Xml correspondant à un autre élément que la racine.
 					</p>
@@ -114,7 +114,7 @@
 						</div>
 					</p>
 					<p>
-						Malheureusement, si on utilise la technique décrite au paragraphe précédent, l'élément "adresse" n'est pas généré. 
+						Malheureusement, si on utilise la technique décrite au paragraphe précédent, l'élément "adresse" n'est pas généré.
 					</p>
 					<p>
 						On obtient en effet :
@@ -152,7 +152,7 @@
     ...
     &lt;/xs:complexType&gt;</pre>
 								    </div>
-								</p>    
+								</p>
 							</li>
 							<li>
 							    <p>
@@ -173,7 +173,7 @@
     ...
     &lt;/xs:element&gt;</pre>
                                     </div>
-                                 </p>   
+                                 </p>
 							</li>
 						</ul>
 					</p>
@@ -185,7 +185,7 @@
 
 			<section name="Utilisation d'un package runtime extérieur">
 				<p>
-					Par défaut, les classes permettant le processus de marshalling/unmarshalling sont générées systématiquement avec les classes objets générées. On peut utiliser cependant une instruction (<code>use-runtime</code>) pour forcer la réutilisation d'un package existant (typiquement, on cherchera à utiliser pour un module le package <code>runtime</code> du cœur de formengine). 
+					Par défaut, les classes permettant le processus de marshalling/unmarshalling sont générées systématiquement avec les classes objets générées. On peut utiliser cependant une instruction (<code>use-runtime</code>) pour forcer la réutilisation d'un package existant (typiquement, on cherchera à utiliser pour un module le package <code>runtime</code> du cœur de formengine).
 				</p>
 				<p>
 					Cela ne peut cependant fonctionner sans risque que si les classes utilisant les mêmes runtimes ont été générées avec la même version de Jaxb.
@@ -201,7 +201,7 @@
 				<subsection name="Eviter les collisions">
 
 					<p>
-						Les instructions de personnalisation peuvent permettre de résoudre des collisions. On va en effet pouvoir redéfinir pour chaque élément du schéma le nom de la classe générée correspondante. 
+						Les instructions de personnalisation peuvent permettre de résoudre des collisions. On va en effet pouvoir redéfinir pour chaque élément du schéma le nom de la classe générée correspondante.
 					</p>
 					<p>
 						Cf. documentation Jaxb.
@@ -239,13 +239,13 @@
 										<pre>
     &lt;jxb:javaType name="java.sql.Date" xmlType="xs:date" printMethod="toString" parseMethod="valueOf"/&gt;</pre>
 									</div>
-								</p>	
+								</p>
 							</li>
 							<li>
 							    <p>
 								 	Association d'une heure Sql en Java au type <code>xs:time</code>
-								 </p>	
-								 <p>	
+								 </p>
+								 <p>
 									<div class="source">
 										<pre>
     &lt;jxb:javaType name="java.sql.Time" xmlType="xs:time" printMethod="toString" parseMethod="valueOf"/&gt;</pre>
@@ -256,7 +256,7 @@
 							    <p>
 								   Association du type Java <code>int</code> au type <code>xs:positiveInteger</code> (au lieu de <code>BigInteger</code> par défaut)
 								 </p>
-								 <p>	
+								 <p>
 									<div class="source">
 										<pre>
     &lt;jxb:javaType name="int" xmlType="xs:positiveInteger" parseMethod="javax.xml.bind.DatatypeConverter.parseInt" printMethod="javax.xml.bind.DatatypeConverter.printInt"/&gt;</pre>
@@ -276,7 +276,7 @@
 				<subsection name="Maîtriser les énumérations">
 
 					<p>
-						Pour générer correctement les objets correspondant aux énumérations, il est nécessaire de fournir des règles spécifiques. 
+						Pour générer correctement les objets correspondant aux énumérations, il est nécessaire de fournir des règles spécifiques.
 					</p>
 					<p>
 						Dans la plupart des cas, on peut les définir au niveau global (alors toutes les énumérations rencontrées seront considérées comme étant du même type), en rajoutant un paramètre à la balise <code>&lt;jxb:globalBindings/&gt;</code>.
@@ -296,7 +296,7 @@
 
 			</section>
 
-			
+
 
 
 	</body>

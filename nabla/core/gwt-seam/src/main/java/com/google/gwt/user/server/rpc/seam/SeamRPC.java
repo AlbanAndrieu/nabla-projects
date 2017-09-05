@@ -17,7 +17,7 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * RPC.
- * 
+ *
  * @author <a href="mailto:sninsky@bgs.sk">Radovan Sninsky</a>
  * @version $Revision $ $Date $
  * @since 1.0, 28.10.2009 22:25:11

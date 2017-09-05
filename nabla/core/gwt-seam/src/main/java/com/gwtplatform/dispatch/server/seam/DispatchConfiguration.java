@@ -4,7 +4,7 @@ import com.google.gwt.user.server.rpc.seam.GWTService;
 
 /**
  * The dispatch configuration of GWT Seam.
- * 
+ *
  * @author Florian Sauter
  */
 public interface DispatchConfiguration

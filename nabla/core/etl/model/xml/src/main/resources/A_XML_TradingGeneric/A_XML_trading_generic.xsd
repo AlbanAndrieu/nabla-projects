@@ -7,7 +7,7 @@
 	xmlns:TPI="urn:nabla:A_XML_TradePartyInfo:1_0_0" xmlns:TPY="urn:nabla:A_XML_TradePayment:1_0_0"
 	xmlns:TCD="urn:nabla:A_XML_TradeConditions:1_0_0" xmlns:PTY="urn:nabla:A_XML_TradingParty:1_0_0"
 	xmlns:THD="urn:nabla:A_XML_TradeHeader:1_0_0" xmlns:INS="urn:nabla:A_XML_InstrumentService:1_0_0">
-	
+
 	<!--Core Generic Data for trading entities (trade, product, contract, event...) -->
 	<!-- *********************************************** -->
 	<!--Version Of The Package -->
@@ -20,7 +20,7 @@
 	<!--Include XML common types -->
 	<!--Include Shared Schemes -->
 	<xs:include schemaLocation="A_XML_trading_generic_scheme.xsd" />
-	<!--<xs:import namespace="urn:nabla:A_XML_ReferentialGeneric:1_0_0" schemaLocation="../A_XML_Generic/A_XML_referential_generic.xsd" 
+	<!--<xs:import namespace="urn:nabla:A_XML_ReferentialGeneric:1_0_0" schemaLocation="../A_XML_Generic/A_XML_referential_generic.xsd"
 		/> -->
 	<xs:import namespace="urn:nabla:A_XML_ReferentialGeneric:1_0_0"
 		schemaLocation="../A_XML_Generic/A_XML_types.xsd" />
@@ -103,7 +103,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<!-- *********************************************** -->
-	<!--*** Orginal FPML elemnts for specific identification (ONLY FOR FPML 
+	<!--*** Orginal FPML elemnts for specific identification (ONLY FOR FPML
 		USE - NOT USED IN DEFIML) *** -->
 	<!-- *********************************************** -->
 	<!--*** FPML shared elements *** -->
@@ -397,7 +397,7 @@
 			<xs:element name="eventEndDate" type="xs:date" />
 		</xs:sequence>
 	</xs:complexType>
-	<!-- *********************************************** Brokerage and PaymentDetail 
+	<!-- *********************************************** Brokerage and PaymentDetail
 		info: -->
 	<!--Used in ActivityEvent, Trade -->
 	<xs:complexType name="XML_Accounting">

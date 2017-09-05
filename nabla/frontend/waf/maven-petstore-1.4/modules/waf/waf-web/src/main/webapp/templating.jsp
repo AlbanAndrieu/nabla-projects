@@ -5,23 +5,23 @@
 
 <!--
  Copyright 2002 Sun Microsystems, Inc. All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
- 
+
  - Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
- 
+
  - Redistribution in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in
    the documentation and/or other materials provided with the
    distribution.
- 
+
  Neither the name of Sun Microsystems, Inc. or the names of
  contributors may be used to endorse or promote products derived
  from this software without specific prior written permission.
- 
+
  This software is provided "AS IS," without a warranty of any
  kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND
  WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
@@ -34,7 +34,7 @@
  PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF
  LIABILITY, ARISING OUT OF THE USE OF OR INABILITY TO USE SOFTWARE,
  EVEN IF SUN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
- 
+
  You acknowledge that Software is not designed, licensed or intended
  for use in the design, construction, operation or maintenance of
  any nuclear facility.
@@ -65,7 +65,7 @@ This templating mechanism contains:
     <br/><br/>
     You will need to provide the languages supported by the servlet in the web.xml file
     init parameters. This format of the languages is derived using th codes specified
-    in ISO-649 separated by &quot;_&quot;s. The format is Language_Country or 
+    in ISO-649 separated by &quot;_&quot;s. The format is Language_Country or
     Language_Country_Variant. Only the locales supported by the java.util.Locale
     of the corresponding Java Developer Kit you are using may be used.
     <br/><br/>
@@ -75,7 +75,7 @@ This templating mechanism contains:
     <br/>&nbsp;&nbsp;&nbsp; &lt;/init-param>
     <br/><br/>
     Each language will need to provide a corresponding screen defintions formatted
-    in the same method of Java Resource Bundles. This format is screendefintions followed 
+    in the same method of Java Resource Bundles. This format is screendefintions followed
     by the language specified in ISO-649 language codes separated by a &quot;_&quot;
 
     <br/><br/>
@@ -88,7 +88,7 @@ This templating mechanism contains:
     <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param-value>en_US&lt;/param-value>
     <br/>&nbsp;&nbsp;&nbsp; &lt;/init-param>
 
-    
+
   </td>
  </tr>
  <tr>
@@ -127,11 +127,11 @@ This templating mechanism contains:
      <br/><br/>
       <b>&lt;screen&gt; tag</b>
      <br/><br/>
-      The screen tag is used to define the name of the screen and optionally a 
+      The screen tag is used to define the name of the screen and optionally a
       non default template which the screen will use. The screen tag has parameter
-      sub tags that are used to define what components a screen is made up of. 
+      sub tags that are used to define what components a screen is made up of.
       The parameter sub-tags define attributes for the screen in key/value pairs.
-      The value is assumed to be a resource to be accessed via URL unless a "direct" 
+      The value is assumed to be a resource to be accessed via URL unless a "direct"
       attribute is specified as an attribute of the parameter with the value of "true".
      <br/><br/>
      The following screen uses the special template which maps to the the URL /template2.jsp.
@@ -156,13 +156,13 @@ This templating mechanism contains:
  <tr>
   <td width="25%" bgcolor="white">tempate.jsp</td>
   <td width="70%" bgcolor="#FFCCFF">This file is used as the template for every page
-     in your application. There is one template file for every language. Note you should 
+     in your application. There is one template file for every language. Note you should
      specify the encoding for the language in the tempalte file using the contentType
      directive:
      <br/><br/>
      Example:
      <br/><br/>
-     
+
 &lt;%@ page contentType="text/html;charset=SJIS" %>     <br/><br/>
      The template uses a custom tag to insert the parameters defined in the screen defintions
      files into the template. More details on the IntertTag may be found below.
@@ -219,4 +219,3 @@ This templating mechanism contains:
   </td>
  </tr>
 </table>
-

@@ -488,7 +488,7 @@ Table caption
   A line of <<<~>>> is often used to ``underline'' section titles in order to
   make them stand out of other paragraphs.
 
-
+
 * The APT format at a glance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -599,4 +599,3 @@ Table caption
 ~~Commented out.
 
 ------------------------------------------------------------------------------
-

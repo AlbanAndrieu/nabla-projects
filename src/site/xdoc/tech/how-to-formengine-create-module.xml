@@ -9,29 +9,29 @@
 	<body>
 		<section name="Introduction">
 				<p>
-					Ce document décrit les étapes nécessaires au développement d'un formulaire utilisant le plugin <code>formengine</code>. 
-                    Un tel formulaire se décompose en sous-formulaires composés de champs et de boutons. 
+					Ce document décrit les étapes nécessaires au développement d'un formulaire utilisant le plugin <code>formengine</code>.
+                    Un tel formulaire se décompose en sous-formulaires composés de champs et de boutons.
                     Des contrôles peuvent être déclarés sur les champs.
 				</p>
 				<p>
-					Il est nécessaire d'écrire un fichier Xml qui décrit les composant du formulaire. 
-                    Associé à des feuilles de styles Xsl, ce fichier Xml permet de gérer aussi l'affichage des sous-formulaires. 
-                    Les actions à réaliser, et l'enchaînement de sous-formulaires lié à ces actions sont à décrire dans un ensemble 
+					Il est nécessaire d'écrire un fichier Xml qui décrit les composant du formulaire.
+                    Associé à des feuilles de styles Xsl, ce fichier Xml permet de gérer aussi l'affichage des sous-formulaires.
+                    Les actions à réaliser, et l'enchaînement de sous-formulaires lié à ces actions sont à décrire dans un ensemble
                     de classes Java.
 				</p>
-			
+
 			</section>
 
 			<section name="Les objets métier">
 				<p>
-					Les objets métier servent à générer le flux Xml de sortie et sont générés à l'aide de Jaxb grâce au schéma Xsd décrivant 
+					Les objets métier servent à générer le flux Xml de sortie et sont générés à l'aide de Jaxb grâce au schéma Xsd décrivant
                     le flux Xml.
 				</p>
 				<p>
-					Pour plus d'information concernant l'utilisation de Jaxb, se reporter à la documentation officielle, ainsi qu'aux 
+					Pour plus d'information concernant l'utilisation de Jaxb, se reporter à la documentation officielle, ainsi qu'aux
                     <a href="how-to-formengine-jaxb.html">recommandations relatives à l'utilisation de JAXB</a>.
 				</p>
-			
+
 			</section>
 
 
@@ -142,7 +142,7 @@
 
 
 					<p><u><strong>3. Les boutons</strong></u></p>
-						
+
 						<p>
 							Le sous-formulaire fournit aussi la liste de boutons (et donc des actions) disponibles :
 						</p>
@@ -152,7 +152,7 @@
 <pre>
 &lt;buttons&gt;
      &lt;button name="Retour" type="submit"/&gt;
-     &lt;button name="Valider" type="submit"/&gt; 
+     &lt;button name="Valider" type="submit"/&gt;
  &lt;/buttons&gt;
 </pre>
 </div>
@@ -323,13 +323,13 @@
 									</p>
 								</li>
 
-							
+
 
 							</ul>
 						</p>
 
 						<p>
-							
+
 							Un contrôle non respecté provoque l'affichage d'un message par défaut. Ce message peut être personnalisé en utilisant :
 						</p>
 						<p>
@@ -368,7 +368,7 @@
 				</subsection>
 
 				<subsection name="Les informations de configuration des sorties à utiliser">
-					
+
 					<p>
 						Le fichier Xml permet enfin de définir les générateurs à utiliser. Il est ainsi possible de choisir si on ajoute ou non des informations de transaction génériques, et si c'est le cas,  de définir le générateur d'identifiants à utiliser.
 					</p>
@@ -396,14 +396,14 @@
 
 				</subsection>
 
-				
+
 				<p>
 					Les fichiers Xml peuvent être dupliqués pour fournir plusieurs instances d'un formulaire configurées différemment. Notons cependant que les noms (attribut <code>name</code>) de formulaires, de sous-formulaires, de champs, ... servent d'identifiant et sont utilisés par les classes Java. Ils ne doivent donc pas être modifiés d'une instance à l'autre.
 				</p>
-				
-				
-				
-			
+
+
+
+
 			</section>
 
 			<section name="Les classes Java">
@@ -420,7 +420,7 @@
                                              <center>
                                                 <img src="images/formengine_form.gif" />
                                               </center>
-                                        </p>						
+                                        </p>
 				</subsection>
 
 				<subsection name="Les classes de sous-formulaire">
@@ -431,7 +431,7 @@
                                              <center>
                                                 <img src="images/formengine_subform.gif" />
                                               </center>
-                                        </p>	                                       					
+                                        </p>
 					<p>
 						Ceci implique :
 					</p>
@@ -467,7 +467,7 @@
                                              <center>
                                                 <img src="images/formengine_services.gif" />
                                               </center>
-                                       </p>	                                            
+                                       </p>
 					<p>
 						<ul>
 							<li>
@@ -499,13 +499,13 @@
 
 			<section name="Les feuilles de styles Xsl">
 				<p>
-					Les feuilles de styles Xsl sont utilisées pour l'affichage des sous-formulaires. 
+					Les feuilles de styles Xsl sont utilisées pour l'affichage des sous-formulaires.
 				</p>
 				<p>
 					On doit définir au moins une feuille de styles par sous-formulaire : celle responsable de l'affichage des éléments de formulaire (champs, boutons, ...). Dans cette feuille de styles, il est conseillé d'importer "formelements.xsl" : cette feuille Xsl fournit un nombre important de templates prédéfinis (notamment les champs cachés des formulaires, permettant l'enchaînement correct des écrans). Si on ne désire pas utiliser cette feuille de styles générique, il est fortement conseillé d'en reprendre le principe pour définir un certain nombre de templates utilisables par tous les sous-formulaires.
 				</p>
 				<p>
-					Pour certains sous-formulaires, on peut de plus avoir à définir une deuxième feuille de styles : celle responsable de l'affichage de la partie "récapitulatif" dans un sous-formulaire. 
+					Pour certains sous-formulaires, on peut de plus avoir à définir une deuxième feuille de styles : celle responsable de l'affichage de la partie "récapitulatif" dans un sous-formulaire.
 				</p>
 				<p>
 				   <p>
@@ -520,7 +520,7 @@
 
 				</p>
 
-			
+
 			</section>
 
 

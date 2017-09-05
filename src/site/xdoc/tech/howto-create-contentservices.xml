@@ -10,7 +10,7 @@
         <subsection name="Définition">
             <p>
                 A content service can create its own pages. Each service has a call parameter which
-                allows the portal to dispatch requests towards the service. Nabla uses various 
+                allows the portal to dispatch requests towards the service. Nabla uses various
                 Content Services as enumerated below :
             </p>
             <p>
@@ -45,7 +45,7 @@
         </subsection>
         <subsection name="Interfacing the ContentService">
             <p>
-                Here are the interface methods of the ContentService : 
+                Here are the interface methods of the ContentService :
             </p>
             <p>
                 <table>
@@ -63,14 +63,14 @@
                         <td>isInvoked</td>
                         <td>
                              Resolves from the parameters from the HTTP request,
-                             whether it is addessed to t.For example, the PageService 
-                             verifies if the request includes the <code>id_page</code> parameter. 
+                             whether it is addessed to t.For example, the PageService
+                             verifies if the request includes the <code>id_page</code> parameter.
                         </td>
                     </tr>
                     <tr>
                         <td>getCache</td>
                         <td>
-                             Indicates if the service has a cache activated. 
+                             Indicates if the service has a cache activated.
                         </td>
                     </tr>
                     <tr>
@@ -99,7 +99,7 @@
                 New services can be added by new plugins. The plugin must define
                 must define the ContentService in its deployment file as described
                 below :
-                            
+
             </p>
             <p>
                 <div class="source">
@@ -107,11 +107,11 @@
    &lt;!-- Content Service --&gt;
    &lt;content-service&gt;
      &lt;content-service-class&gt;com.nabla.project.plugins.myplugin.service.MyContentService&lt;/content-service-class&gt;
-   &lt;/content-service&gt;                     
+   &lt;/content-service&gt;
                     </pre>
                 </div>
             </p>
-            
+
         </subsection>
         </section>
     </body>

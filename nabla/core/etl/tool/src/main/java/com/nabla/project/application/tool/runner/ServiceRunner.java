@@ -44,7 +44,7 @@ import java.lang.reflect.Method;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -57,7 +57,7 @@ public class ServiceRunner implements Runnable
 
     /**
      * Creates a new ServiceRunner object.
-     * 
+     *
      * @param invocation DOCUMENT ME!
      * @param service DOCUMENT ME!
      */
@@ -91,7 +91,7 @@ public class ServiceRunner implements Runnable
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param args DOCUMENT ME!
      * @throws Exception DOCUMENT ME!
      * @throws RuntimeException DOCUMENT ME!

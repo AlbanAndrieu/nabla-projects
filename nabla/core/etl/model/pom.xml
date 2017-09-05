@@ -16,7 +16,7 @@
 
         <modules>
                 <!--<module>nstools</module>-->
-                <module>xml</module>                
+                <module>xml</module>
                 <module>message</module>
         </modules>
 

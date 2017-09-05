@@ -51,7 +51,7 @@
                 <p>Mysql installation manual can be found at the following url :
                     <a href="http://dev.mysql.com/doc/" target="_blank">http://dev.mysql.com/doc/</a>
                 </p>
-                <p>Update your OS environment PATH by adding the path to the <code>bin</code> 
+                <p>Update your OS environment PATH by adding the path to the <code>bin</code>
 					of MySQL installation folder.
                 </p>
 				<p>
@@ -81,13 +81,13 @@ max_allowed_packet=24M
 					<p>The easiest and fastest way to create the database is to use Ant.
 						That's why, before that, you have to install Ant.
 					</p>
-					<p>Please follow this procedure in order to install it : </p>		
+					<p>Please follow this procedure in order to install it : </p>
 					<subsection name="2.1.a Ant Installation">
 						<p>Download Ant from the following url :
 							 <a href="http://ant.apache.org/bindownload.cgi" target="_blank">http://ant.apache.org/bindownload.cgi</a>.
 						</p>
 						<p>
-							Update your OS environment PATH by adding the path to the <code>bin</code> 
+							Update your OS environment PATH by adding the path to the <code>bin</code>
 							of Ant installation folder.
 						</p>
 					</subsection>
@@ -96,8 +96,8 @@ max_allowed_packet=24M
 							Now, you only have to create the <code>nabla</code> database.
 						</p>
 						<p>
-							To do this, please go to the <code>WEB-INF/sql</code> folder in the webapp and execute 
-							the following command : 
+							To do this, please go to the <code>WEB-INF/sql</code> folder in the webapp and execute
+							the following command :
 						</p>
 						 <p>
                             <strong>[Win32] &amp; [Unix] :</strong> ant
@@ -109,7 +109,7 @@ max_allowed_packet=24M
 							creation and initialization files of the nabla core tables
 							(<code>create_db_nabla_core.sql</code> and	<code>init_db_nabla_core.sql</code>).
 							After that, if the webapp contains some plugins, the script will execute the SQL files for each plugin
-							 which are in the <code>WEB-INF/sql/plugins</code> directory (these files can be creation and 
+							 which are in the <code>WEB-INF/sql/plugins</code> directory (these files can be creation and
 							 initialization scripts for plugin tables but can also initialize core tables).
 						</p>
 						<p>
@@ -127,10 +127,10 @@ max_allowed_packet=24M
 	                <p>
 						The other way to install the database is to use MySQL commands. To do that, you only have to have MySQL installed.
 						To install and configure MySQL, please go to the the part
-						<a href="#a1._MySQL_Installation"><u>I.1. MySQL Installation</u></a>. 
+						<a href="#a1._MySQL_Installation"><u>I.1. MySQL Installation</u></a>.
 					</p>
 					<p>
-	                    <strong>Information :</strong> the <code>*.sql</code> files are used by "source" MySQL command are found 
+	                    <strong>Information :</strong> the <code>*.sql</code> files are used by "source" MySQL command are found
 						in the <code>WEB-INF/sql</code> folder.
 	                </p>
                     <p>
@@ -208,12 +208,12 @@ mysql&gt; source init_db_nabla_core.sql;
 					<ul>
 						<li>
 			                <p>
-			                    Plugin tables (if these plugins are deployed in the webapp) : 
+			                    Plugin tables (if these plugins are deployed in the webapp) :
 							</p>
 			            </li>
 					</ul>
 					<p>
-						In the <code>WEB-INF/sql/plugins</code> directory, you have to execute all SQL scripts (<code>create_&lt;X&gt;.sql</code> 
+						In the <code>WEB-INF/sql/plugins</code> directory, you have to execute all SQL scripts (<code>create_&lt;X&gt;.sql</code>
 						and <code>init_&lt;X&gt;.sql</code>) of each sub-directory.
 					</p>
 					<p>
@@ -228,7 +228,7 @@ mysql&gt; source init_&lt;X&gt;.sql;
 			            </div>
 			        </p>
 	                <p>
-	                    <u>To verify whether the database is correctly configured for 
+	                    <u>To verify whether the database is correctly configured for
 	                    user nabla (by default), run the commands</u> :
 	                </p>
 	                <p>
@@ -243,14 +243,14 @@ mysql&gt; select * from core_admin_right;
 	                    </div>
 	                </p>
 				</subsection>
-            </subsection>				
+            </subsection>
             <subsection name="3. Application Server Installation">
                 <p>
                     The installation described below concerns the Tomcat Server.
                 </p>
                 <subsection name="3.1 JDK 6.0 Installation">
                     <p>
-                        Tomcat installation needs the installation of Java 2 SDK Standard Edition (the version used must be at 
+                        Tomcat installation needs the installation of Java 2 SDK Standard Edition (the version used must be at
 						least <strong>jdk 1.6.0</strong>) on the server.
                     </p>
                     <p>
@@ -262,18 +262,18 @@ mysql&gt; select * from core_admin_right;
                         "_blank">http://java.sun.com/j2se/downloads.html</a>.
                     </p>
                     <p>
-                        Configure the JAVA_HOME environment variable value to the path of the JDK containing folder. 
+                        Configure the JAVA_HOME environment variable value to the path of the JDK containing folder.
                     </p>
                     <p>
-                        Update the environment variable PATH by adding JAVA_HOME\bin 
+                        Update the environment variable PATH by adding JAVA_HOME\bin
                         to its definition.
                     </p>
                 </subsection>
-            
+
                 <subsection name="3.2 Tomcat Installation">
                     <p>
-                        Download Tomcat from the following address: 
-						<a href="http://jakarta.apache.org/tomcat/index.html" 
+                        Download Tomcat from the following address:
+						<a href="http://jakarta.apache.org/tomcat/index.html"
 						target="_blank">http://jakarta.apache.org/tomcat/index.html</a>.
 					</p>
 					<p>
@@ -281,18 +281,18 @@ mysql&gt; select * from core_admin_right;
                         to the path of the Tomcat folder.
                     </p>
                     <p>
-                        Reload the file containing the environment variables for 
+                        Reload the file containing the environment variables for
                         the update to take effect.
                     </p>
                 </subsection>
-            
+
                 <subsection name="3.3 Installation Checking">
                     <p>
                         <ul>
                             <li>
                                 <p>
                                     Run Tomcat : (<code>&lt;tomcat_home&gt;</code> is the installation folder
-                                    of Tomcat). 
+                                    of Tomcat).
                                 </p>
                                 <p>
                                     <strong>[Win32] :</strong>
@@ -304,7 +304,7 @@ mysql&gt; select * from core_admin_right;
                                 </p>
                             </li>
                             <li>
-                                Run a browser  and type the following url : 
+                                Run a browser  and type the following url :
                                <strong><code>http://localhost:8080</code></strong>.
                                The Welcome page of Tomcat should appear.
                             </li>
@@ -325,7 +325,7 @@ mysql&gt; select * from core_admin_right;
                         </ul>
                     </p>
                 </subsection>
-            
+
                 <subsection name="3.4 Server Configuration">
                     <p>
                         <ul>
@@ -362,19 +362,19 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                                     </div>
                                 </p>
                                 <p>
-									to set the initial (128 Mo) and maximum (512 Mo) amounts allocated for the JVM. 
+									to set the initial (128 Mo) and maximum (512 Mo) amounts allocated for the JVM.
                                 </p>
                             </li>
                         </ul>
                     </p>
                 </subsection>
-            </subsection>            
+            </subsection>
             <subsection name="4. Application Installation">
                     <p>
                         <ul>
                             <li>
                                 Download the Nabla zip files. You can go to the
-								<a href="download.html"><u>Download</u></a> page to download these files.  
+								<a href="download.html"><u>Download</u></a> page to download these files.
 							</li>
 							<li>
 								Build Nabla project if you use the sources and not the .war file.
@@ -398,10 +398,10 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                     </p>
             </subsection>
         </section>
-        
+
         <section name="II. Nabla Configuration">
             <p>
-                Application configuration files are located in the WEB-INF/conf folder of the webapp. 
+                Application configuration files are located in the WEB-INF/conf folder of the webapp.
 				The files that need to be configured are the following:
             </p>
             <p>
@@ -410,7 +410,7 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                     <li><code>db.properties</code></li>
                 </ul>
             </p>
-                
+
             <subsection name="1. Configuration of the config.properties file">
                 <p>
                     Needs update during the deployment process:
@@ -436,7 +436,7 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
@@ -470,12 +470,12 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
                                 Adjust the absolute paths to access to the property files <code>nabla, jtidy and webmaster</code>.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -498,12 +498,12 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
                                 Adjust the absolute paths of the log files.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -523,14 +523,14 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
                                     If <code>error.page.debug=true</code>, the detail of the error is
                                     visible on the page. If <code>error.page.debug=false</code>, the message
                                     defined in <code>error.page.message</code> will be visible in the page.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -547,13 +547,13 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
                                 Activate or deactivate the cache management for templates, page content or articles.
                                 In a production environment , it is advised to place the values to <strong><code>true</code></strong>.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -573,15 +573,15 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         </tr>
                     </table>
                 </p>
-                <p>                    
+                <p>
                     <table>
                         <tr>
                             <th>
                                 Indicate the paths of the files <code>application.log,
-								error.log and pool.log</code>. 
-                            </th>                            
+								error.log and pool.log</code>.
+                            </th>
                         </tr>
-                        <tr>                    
+                        <tr>
                             <td>
                                 <p>
                                     <code># log4j parameters</code>
@@ -617,8 +617,8 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                     <table>
                         <tr>
                             <th>
-                                <p>     
-                                    Connection service choice : 
+                                <p>
+                                    Connection service choice :
                                 </p>
                                 <p>
                                     <ul>
@@ -648,7 +648,7 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         <tr>
                             <th>
                                 Indicate the name of the driver required to access a MySQL database.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -656,7 +656,7 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                                     <code>portal.driver=org.gjt.mm.mysql.Driver</code>
                                 </p>
                             </td>
-                        </tr>    
+                        </tr>
                     </table>
                 </p>
                 <p>
@@ -664,24 +664,24 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                         <tr>
                             <th>
                                 Indicate <code>portal.url</code> to identify the jdbc datasource
-                                of the Nabla database. 
-                                <code>portal.user</code> and <code>portal.password</code> indicate the 
+                                of the Nabla database.
+                                <code>portal.user</code> and <code>portal.password</code> indicate the
                                 login and password required to connect to the database.
-                            </th>                            
+                            </th>
                         </tr>
                         <tr>
                             <td>
                                 <p>
                                     <code>portal.url=jdbc:mysql://127.0.0.1/nabla?autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=utf8</code>
                                 </p>
-                                <p>                              
+                                <p>
                                     <code>portal.user=nabla</code>
                                 </p>
                                 <p>
                                     <code>portal.password=nabla</code>
                                 </p>
                             </td>
-                        </tr>        
+                        </tr>
                     </table>
                 </p>
 								<p>
@@ -741,11 +741,11 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
 								</p>
 								<p>
 									<ul>
-										<li><code>SELECT 1</code> for a MySQL database.</li> 
+										<li><code>SELECT 1</code> for a MySQL database.</li>
 										<li><code>SELECT SYSDATE FROM dual</code> for an Oracle database.</li>
 									</ul>
 								</p>
-                            </th>                    
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -753,11 +753,11 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                                     <code>portal.checkvalidconnectionsql=SELECT 1</code>
                                 </p>
                             </td>
-                        </tr>                        
+                        </tr>
                     </table>
                 </p>
                 <p>
-                    <em>Notice</em> : if you are modifying one or more property files, 
+                    <em>Notice</em> : if you are modifying one or more property files,
 					you must stop and restart the tomcat server for the update takes effect.
                 </p>
                 <p>
@@ -768,7 +768,7 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
 		</section>
         <section name="III. Launching the application">
             <p>
-                To launch the webapp, type in your browser the 
+                To launch the webapp, type in your browser the
                 following URL (the tomcat server must be running):
                 <strong><code>http://localhost:8080/nabla/</code></strong>.
             </p>
@@ -782,9 +782,9 @@ CATALINA_OPTS="-Xms128m -Xmx512m"
                 Two accounts are created by default:
             </p>
             <p>
-                <ul> 
+                <ul>
                     <li>
-                        Login : <code>admin</code> - Password : <code>admin</code> 
+                        Login : <code>admin</code> - Password : <code>admin</code>
                         (Technical administrator account).
                     </li>
                     <li>

@@ -16,19 +16,19 @@
 					<value>
 SET rowcount :maxrow
 					</value>
-				</entry>			
+				</entry>
 				<entry>
 					<key>
 						<value>SELECT</value>
 					</key>
 					<value>
-SELECT P.Purposes_ShortName Scenario, P.Purposes_Name, K.DealIdFO, K.BODeal_Id, D.Comments KtpComment, 
-S.Securities_Id, S.Securities_Name, S.Securities_ShortName, S.SecuritiesType, 
-E.Validated, E.EventDate, E.InternalStatus, 
+SELECT P.Purposes_ShortName Scenario, P.Purposes_Name, K.DealIdFO, K.BODeal_Id, D.Comments KtpComment,
+S.Securities_Id, S.Securities_Name, S.Securities_ShortName, S.SecuritiesType,
+E.Validated, E.EventDate, E.InternalStatus,
 ES.Event_Id, ES.Folders_Id, ES.Currencies_Id, ES.TradeDate, ES.ValueDate,
-ES.BuySell, ES.Quantity, ES.Principal, ES.Price, ES.NetPrice, 
-ED.PositionKey_Id, ED.PositionStatus, ED.PositionDate, ED.ReversalDate, 
-C.PositionCfg_Id, C.PositionCfg_Name, C.Entity_Id, C.PositionLevel, C.ChartOfAccount_Id, C.AccountingGroup_Id, C.AccGrpInventoryLevel, C.FoldersGrp_Id, C.FolGrpInventoryLevel, C.InventoryMethod, C.RevaluationType, C.AccountingRevalMethod, C.AllowProvisions, C.PositionDate PositionDateCfg, 
+ES.BuySell, ES.Quantity, ES.Principal, ES.Price, ES.NetPrice,
+ED.PositionKey_Id, ED.PositionStatus, ED.PositionDate, ED.ReversalDate,
+C.PositionCfg_Id, C.PositionCfg_Name, C.Entity_Id, C.PositionLevel, C.ChartOfAccount_Id, C.AccountingGroup_Id, C.AccGrpInventoryLevel, C.FoldersGrp_Id, C.FolGrpInventoryLevel, C.InventoryMethod, C.RevaluationType, C.AccountingRevalMethod, C.AllowProvisions, C.PositionDate PositionDateCfg,
 C.SortingCriteria, C.OpenSenseSorting, C.ReversalProcess, C.EndOfDay, C.AccountingMethod, C.ResetAccruedAcquired, C.LongPositionRevalPrice, C.ShortPositionRevalPrice, C.PositionSense, C.UseNativeDeal, C.UseExternalDeal, C.CollatAccMethod, C.UnsettledDeal
 					</value>
 				</entry>
@@ -52,8 +52,8 @@ AND    K.BODeal_Id = BO.BODeal_Id
 AND    D.EquitiesDeals_Id = K.DealIdFO
 AND    D.Purposes_Id = P.Purposes_Id
 AND    D.Folders_Id = F.Folders_Id
-AND    ES.Event_Id = E.Event_Id 
-AND    E.Securities_Id = S.Securities_Id 
+AND    ES.Event_Id = E.Event_Id
+AND    E.Securities_Id = S.Securities_Id
 AND    ED.PositionKey_Id = Y.PositionKey_Id
 AND    Y.PositionCfg_Id = C.PositionCfg_Id
 AND    S.Validity = 'A'
@@ -68,7 +68,7 @@ AND    C.PositionDate = 'V'
 					<value>
 AND K.KdbTables_Id IN (SELECT KdbTables_Id FROM KplusLocal1..KdbTables WHERE KdbTables_Name = ':typeofdeal')
 					</value>
-				</entry>				
+				</entry>
 				<entry>
 					<key>
 						<value>DATVALMAX</value>
@@ -92,7 +92,7 @@ AND ED.PositionDate &gt;= convert (VARCHAR, ':datvalmin', 105)
 					<value>
 AND F.Folders_ShortName = ':folder'
 					</value>
-				</entry>				
+				</entry>
 				<entry>
 					<key>
 						<value>ORDERBY</value>
@@ -100,7 +100,7 @@ AND F.Folders_ShortName = ':folder'
 					<value>
 ORDER BY P.Purposes_ShortName, E.BODeal_Id, E.Event_Id
 					</value>
-				</entry>				
+				</entry>
 			</map>
 		</property>
 	</bean>

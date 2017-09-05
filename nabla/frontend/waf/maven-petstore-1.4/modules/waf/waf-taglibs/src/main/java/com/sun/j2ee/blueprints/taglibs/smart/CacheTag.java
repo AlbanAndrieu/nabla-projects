@@ -301,7 +301,7 @@ public class CacheTag extends BodyTagSupport {
 
 /**
          * Creates a new Entry object.
-         * 
+         *
          * @param content DOCUMENT ME!
          * @param duration DOCUMENT ME!
          */

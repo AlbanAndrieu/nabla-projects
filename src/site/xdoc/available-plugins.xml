@@ -9,7 +9,7 @@
 			<p>
 				The architecture of Nabla is modular. The main part of the
 				functionalities of the application comes from the plugins available
-				below : 
+				below :
             </p>
 			<p>
 				<table>
@@ -131,7 +131,7 @@
 						</td>
 						<td>Plugin SystemInfo : System Info display for Nabla
 							Backoffice</td>
-					</tr>					
+					</tr>
 				</table>
 			</p>
 			<p>
@@ -146,7 +146,7 @@
 						</td>
 						<td>Plugin Codewizard : Java Code generator to develop
 							Nabla plugins</td>
-					</tr>					
+					</tr>
 					<tr>
 						<td>
 							<a href="/plugins/plugin-map/">map</a>

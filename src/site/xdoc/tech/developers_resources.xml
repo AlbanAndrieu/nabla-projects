@@ -6,8 +6,8 @@
           </title>
       </properties>
         <body>
-                <section name="Developer's Resources">                    
-                        <p> 
+                <section name="Developer's Resources">
+                        <p>
                             How can we develop on Nabla
                         </p>
                     <subsection name="Documentation's list">
@@ -31,20 +31,18 @@
 								<tr>
 									<td><a href="data-access.html">Data Access</a></td>
 									<td>The data access</td>
-								</tr>							
+								</tr>
 								<tr>
 									<td><a href="howto-use-site-message.html">Site messages</a></td>
 									<td>The management of messages on the site</td>
-								</tr>		
+								</tr>
 								<tr>
 									<td><a href="howto-create-plugins.html">Plugins</a></td>
 									<td>Create a Nabla plugin</td>
-								</tr>											
+								</tr>
 							</table>
-						</p>	
+						</p>
                     </subsection>
                 </section>
         </body>
   </document>
-
-      

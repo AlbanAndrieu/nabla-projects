@@ -16,13 +16,13 @@
               with the specific naming rules, by using the configuration
               files delivered by the DSTI.
           </p>
-          
+
           <subsection name="General Principles">
               <p>
                 The identifiers name must follow the following rules :
               </p>
               <p>
-                 <ul> 
+                 <ul>
                      <li>Be commonly employed to identify the object</li>
                      <li>Not bring confusion or absurdity</li>
                      <li>Be in english language</li>
@@ -39,10 +39,10 @@
                 Do not use absolute paths (the only absolute paths used
                 are stored in the parameters of the config.properties).
               </p>
-             
+
           </subsection>
-          
-          <subsection name="Variables"> 
+
+          <subsection name="Variables">
               <p>
                  The Java base types must be prefixed as follows:
               </p>
@@ -108,13 +108,13 @@
                 an underscore.
               </p>
           </subsection>
-          
+
           <subsection name="Constants">
              <p>
                 Every string or numerical values should be placed in a constant.
-                The declaration of these constants must be done in the first lines 
+                The declaration of these constants must be done in the first lines
                 of the sourcecode or in a particular class containing the constants.
-                
+
              </p>
              <p>
                 The prefixes must indicate the nature of the constants.
@@ -161,22 +161,22 @@
                 words seperated by underscores.
              </p>
              <p>
-                For a big plugin, the constants will be collected in 
+                For a big plugin, the constants will be collected in
                 a class <code>com.nabla.project.plugins.myplugins.web.Constants</code>.
              </p>
           </subsection>
-          
+
       <subsection name="Database objects">
           <p>
               All table's and column's names should be in low caps with words separated by an underscore character.
               All table's name should begin by "&lt;plugin name&gt;_" except for the core tables that begin by "core_".
           </p>
       </subsection>
-      
+
           <subsection name="The SQL requests">
               <p>
                 The SQL requests from DAO classes (business layer) must
-                be declared as String variables and must respect the 
+                be declared as String variables and must respect the
                 following format :
              </p>
              <p>
@@ -197,12 +197,12 @@ String strSQL = "SELECT a.id_theme, a.description_theme \
                  a.id_theme = b.id_theme and b.id_newsletter = ? ";</pre>
                  </div>
              </p>
-         
+
          </subsection>
-         
+
          <subsection name="Templates files">
               <p>
-                 Extension : .html 
+                 Extension : .html
               </p>
               <p>
                   Format : in lower case, words seperated by
@@ -235,7 +235,7 @@ String strSQL = "SELECT a.id_theme, a.description_theme \
                  no abbreviation nor hyphens (eg: <code>@file_name@</code>)
               </p>
           </subsection>
-          
+
           <subsection name="JSP files">
              <p>
                 Nomenclature : Hungarian notation, english language, no abbreviations
@@ -247,15 +247,15 @@ String strSQL = "SELECT a.id_theme, a.description_theme \
                 for pages used in view processing of a creation form
                 , <code>Modify&lt;Feature&gt;.jsp</code>
                 for pages used in view processing of a modification form
-                <code>Remove&lt;Feature&gt;.jsp</code> 
+                <code>Remove&lt;Feature&gt;.jsp</code>
                 for pages used in view processing of a removal form
-                <code>Manage&lt;Feature&gt;.jsp</code> 
+                <code>Manage&lt;Feature&gt;.jsp</code>
                 for pages used in view processing of a management form,
-                <code>View&lt;Feature&gt;.jsp</code> 
+                <code>View&lt;Feature&gt;.jsp</code>
                 for pages used in view processing of a datasheet view form
-                , <code>Confirm&lt;Feature&gt;.jsp</code> 
+                , <code>Confirm&lt;Feature&gt;.jsp</code>
                 for pages used in view processing of a confirmation form
-                 , <code>&lt;Feature&gt;List.jsp</code> 
+                 , <code>&lt;Feature&gt;List.jsp</code>
                  for pages used in view processing of a list form.
              </p>
 
@@ -266,7 +266,7 @@ String strSQL = "SELECT a.id_theme, a.description_theme \
                 <code>DoModify&lt;Feature&gt;.jsp</code> ... )
              </p>
           </subsection>
-          
+
           <subsection name="Image files">
              <p>
                 Naming rules : english language, use of lower case and
@@ -294,23 +294,23 @@ String strSQL = "SELECT a.id_theme, a.description_theme \
                   </tr>
                 </table>
              </p>
-             <p> 
+             <p>
                 The format of the images used for presentation purpose
                 should be in a .gif format.
              </p>
         </subsection>
-        
+
         <subsection name="Xml files">
             <p>
                The Xml tags used by the application must be in lower case
                , seperated by hyphens for composed word, in english language,
-               without abbreviation. 
+               without abbreviation.
             </p>
-            
+
             <p>
                The name of the tags should must a close representation
                of the model : for example «portlet-id» for the tag
-               storing the value of portlet identifier in the column 
+               storing the value of portlet identifier in the column
                <i>id_portlet</i> from <b>portlet</b> table.
              </p>
           </subsection>

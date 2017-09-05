@@ -6,9 +6,9 @@
           </title>
       </properties>
         <body>
-                <section name="Standard development">                    
-                        <p> 
-                             The core of Nabla and its plugins are developed in compliance with the following standards development, respect for which is controlled by the tools and checkstyle PMD: 
+                <section name="Standard development">
+                        <p>
+                             The core of Nabla and its plugins are developed in compliance with the following standards development, respect for which is controlled by the tools and checkstyle PMD:
                         </p>
                     <subsection name="Liste des normes">
                         <p>
@@ -19,7 +19,7 @@
 								</tr>
 								<tr>
 									<td><a href="naming-conventions.html">Naming Conventions</a></td>
-									<td>List naming rules files, classes, packages, methods, variables ...</td>		
+									<td>List naming rules files, classes, packages, methods, variables ...</td>
 								</tr>
 								<tr>
 									<td><a href="coding-conventions.html">Coding Conventions</a></td>
@@ -28,20 +28,18 @@
 								<tr>
 									<td><a href="logging-rules.html">Logging Rules</a></td>
 									<td>List of rules to be used in the implementation of logs</td>
-								</tr>									
+								</tr>
 								<tr>
 									<td><a href="documentation.html">Documentation Rules</a></td>
 									<td>List of rules to be used for writing user and technical documentation</td>
-								</tr>																		
+								</tr>
 								<tr>
 									<td><a href="unit-testing.html">Unit Testing</a></td>
 									<td>List of rules for the implementation of unit testing the core and plugins</td>
-								</tr>										
+								</tr>
 							</table>
                         </p>
                     </subsection>
                 </section>
         </body>
   </document>
-
-      

@@ -41,7 +41,7 @@
 			<artifactId>jboss-j2ee</artifactId>
 			<version>${jboss.version}</version>
 		</dependency>
- 
+
 		<dependency>
 			<groupId>com.sun.j2ee.blueprints</groupId>
 			<artifactId>waf-controller-web</artifactId>
