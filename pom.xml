@@ -17,8 +17,8 @@
         <url>${JOB_URL}</url>
 
 		<scm>
-			<connection>scm:git:git://github.com/AlbanAndrieu/nabla-projects.git</connection>
-			<developerConnection>scm:git:git@github.com:AlbanAndrieu/nabla-projects.git</developerConnection>
+			<connection>scm:git:ssh://git@github.com/AlbanAndrieu/nabla-projects.git</connection>
+			<developerConnection>scm:git:ssh://git@github.com/AlbanAndrieu/nabla-projects.git</developerConnection>
 			<url>https://github.com/AlbanAndrieu/nabla-projects</url>
 			<tag>HEAD</tag>
 		</scm>
