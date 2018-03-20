@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-		<groupId>com.nabla.project.core.etl.core</groupId>
-		<artifactId>core</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>core</artifactId>
+		<groupId>com.nabla.project.core.etl.core</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
 	<groupId>com.nabla.project.core.etl.core.log</groupId>
 	<artifactId>log</artifactId>
 	<packaging>jar</packaging>
 	<name>Etl Core Log</name>
 	<description>Java core log of the Etl</description>
 
+	<properties>
+		<bundle.namespace>com.nabla.project.application.core.log</bundle.namespace>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons.logging.version}</version>
 		</dependency>
 		<!--
 		<dependency>
@@ -36,7 +44,7 @@
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
 		</dependency>
-                <!--
+		<!--
                 <dependency>
                         <groupId>log4j</groupId>
                         <artifactId>apache-log4j-zeroconf</artifactId>
@@ -58,15 +66,15 @@
 	<build>
 		<testResources>
 			<testResource>
-				<directory>${basedir}/src/test/java</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/test/java</directory>
 				<includes>
 					<include>**/*.xml</include>
 				</includes>
 			</testResource>
 			<testResource>
-				<directory>${basedir}/src/test/resources</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/test/resources</directory>
 				<includes>
 					<include>**/*.xml</include>
 					<include>**/*.properties</include>
@@ -78,7 +86,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<inherited>false</inherited>
 				<executions>
 					<execution>
 						<goals>
@@ -86,6 +93,7 @@
 						</goals>
 					</execution>
 				</executions>
+				<inherited>false</inherited>
 				<configuration>
 					<archive>
 						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
@@ -99,8 +107,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<properties>
-		<bundle.namespace>com.nabla.project.application.core.log</bundle.namespace>
-	</properties>
 </project>

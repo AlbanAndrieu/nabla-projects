@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-		<groupId>com.nabla.project.core.etl.core</groupId>
-		<artifactId>core</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>core</artifactId>
+		<groupId>com.nabla.project.core.etl.core</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
 	<groupId>com.nabla.project.core.etl.core.configuration</groupId>
 	<artifactId>configuration</artifactId>
 	<packaging>jar</packaging>
 	<name>Etl Core Configuration</name>
 	<description>Java core configuration of Etl</description>
 
+	<properties>
+		<bundle.namespace>com.nabla.project.application.core.configuration</bundle.namespace>
+	</properties>
+
 	<build>
-		<!-- The next execution of the mvn process-resources command will put the
-			new property value into application.properties -->
-		<filters>
-			<!-- Sometimes a resource file will need to contain a value that can be
-				supplied at build time, only -->
-			<filter>src/main/resources/filters/filter.properties</filter>
-		</filters>
 		<resources>
 			<resource>
-				<directory>${basedir}/src/main/resources</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/main/resources</directory>
 				<includes>
 					<include>**/*.xml</include>
 					<include>**/*.properties</include>
@@ -64,8 +60,8 @@
 
 		<testResources>
 			<testResource>
-				<directory>${basedir}/src/test/resources</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/test/resources</directory>
 				<includes>
 					<include>**/*.xml</include>
 					<include>**/*.properties</include>
@@ -106,6 +102,13 @@
 				</excludes>
 			</testResource>
 		</testResources>
+		<!-- The next execution of the mvn process-resources command will put the
+			new property value into application.properties -->
+		<filters>
+			<!-- Sometimes a resource file will need to contain a value that can be
+				supplied at build time, only -->
+			<filter>src/main/resources/filters/filter.properties</filter>
+		</filters>
 
 		<plugins>
 			<plugin>
@@ -125,8 +128,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<properties>
-		<bundle.namespace>com.nabla.project.application.core.configuration</bundle.namespace>
-	</properties>
 </project>

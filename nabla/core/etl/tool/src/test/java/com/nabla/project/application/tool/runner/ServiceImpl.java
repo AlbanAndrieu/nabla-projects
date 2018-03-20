@@ -37,7 +37,7 @@ import org.apache.log4j.Logger;
 
 /**
  * DOCUMENT ME!
- *
+ * 
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -79,7 +79,7 @@ public class ServiceImpl implements IService
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param param DOCUMENT ME!
      */
     public void startServiceWithParameter(ServiceParameter param)
@@ -92,7 +92,7 @@ public class ServiceImpl implements IService
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @return DOCUMENT ME!
      */
     public static ServiceStatus getStatus()
@@ -104,7 +104,7 @@ public class ServiceImpl implements IService
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param status DOCUMENT ME!
      */
     public static void setStatus(ServiceStatus status)

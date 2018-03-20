@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-		<groupId>com.nabla.project.core.etl</groupId>
-		<artifactId>etl</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>etl</artifactId>
+		<groupId>com.nabla.project.core.etl</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
 	<groupId>com.nabla.project.core.etl.tool</groupId>
 	<artifactId>tool</artifactId>
 	<packaging>jar</packaging>
 	<name>Etl Tool</name>
 	<description>Technical Components providing transverse technical functionalities to services</description>
+
+	<properties>
+		<bundle.namespace>com.nabla.project.application.tool.runner</bundle.namespace>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -37,15 +40,15 @@
 	<build>
 		<testResources>
 			<testResource>
-				<directory>${basedir}/src/test/java</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/test/java</directory>
 				<includes>
 					<include>**/*.xml</include>
 				</includes>
 			</testResource>
 			<testResource>
-				<directory>${basedir}/src/test/resources</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/test/resources</directory>
 				<includes>
 					<include>**/*.xml</include>
 					<include>**/*.properties</include>
@@ -64,21 +67,17 @@
 						</goals>
 					</execution>
 				</executions>
-		      <configuration>
-		        <archive>
-		          <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-		        </archive>
-		      </configuration>
+				<configuration>
+					<archive>
+						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
 			</plugin>
 
-		    <plugin>
-        	        <groupId>org.apache.felix</groupId>
-        	        <artifactId>maven-bundle-plugin</artifactId>
-        	    </plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
-
-        <properties>
-            <bundle.namespace>com.nabla.project.application.tool.runner</bundle.namespace>
-        </properties>
 </project>

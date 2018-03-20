@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  <parent>
-    <groupId>com.nabla.project.core</groupId>
-    <artifactId>core</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
-  </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>core</artifactId>
+		<groupId>com.nabla.project.core</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
 	<groupId>com.nabla.project.core.gwt</groupId>
 	<artifactId>gwt-seam</artifactId>
 	<packaging>jar</packaging>
 	<name>GWT Seam Tool</name>
 	<description>Technical Components providing transverse technical functionalities to services</description>
 
+	<properties>
+		<gwt.version>2.8.2</gwt.version>
+		<!--<gwt.version>2.5.1</gwt.version>-->
+		<gwtp.all.version>1.0.2</gwtp.all.version>
+	</properties>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam</artifactId>
+			<version>${seam.version}</version>
+			<type>ejb</type>
+		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-user</artifactId>
@@ -27,7 +38,7 @@
 			<artifactId>gwtp-all</artifactId>
 			<version>${gwtp.all.version}</version>
 			<scope>provided</scope>
-                        <!--
+			<!--
 		        <exclusions>
 	        		<exclusion>
 	        			<groupId>com.googlecode.objectify</groupId>
@@ -36,25 +47,19 @@
 	        	</exclusions>
                         -->
 		</dependency>
+
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
-			<artifactId>jboss-seam</artifactId>
+			<artifactId>jboss-seam-remoting</artifactId>
 			<version>${seam.version}</version>
-			<type>ejb</type>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>dom4j</artifactId>
+					<groupId>dom4j</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-
-	        <dependency>
-	        	<groupId>org.jboss.seam</groupId>
-	        	<artifactId>jboss-seam-remoting</artifactId>
-	        	<version>${seam.version}</version>
-	        	<scope>provided</scope>
-	        	<exclusions>
-	        		<exclusion>
-	        			<groupId>dom4j</groupId>
-	        			<artifactId>dom4j</artifactId>
-	        		</exclusion>
-	        	</exclusions>
-	        </dependency>
 	</dependencies>
 
 </project>

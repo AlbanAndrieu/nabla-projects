@@ -14,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Author : $author$ Date : $Date: 2010-06-14 11:52:07 +0200 (Thu, 14 Jun 2010) $ Revision : $revision$
- *
+ * 
  * @deprecated
  */
 public class ParallelFullExtract

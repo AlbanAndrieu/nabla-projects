@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <parent>
-    <groupId>com.nabla.project.core</groupId>
-    <artifactId>core</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
-  </parent>
+	<modelVersion>4.0.0</modelVersion>
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.nabla.project.core.etl</groupId>
-  <artifactId>etl</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0.1-SNAPSHOT</version>
-  <name>Etl Assembly</name>
+	<parent>
+		<artifactId>core</artifactId>
+		<groupId>com.nabla.project.core</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.nabla.project.core.etl</groupId>
+	<artifactId>etl</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Etl Assembly</name>
 
-        <modules>
-                <module>core</module>
-                <module>model</module>
-                <module>tool</module>
-                <module>bom</module>
-        </modules>
+	<modules>
+		<module>core</module>
+		<module>model</module>
+		<module>tool</module>
+		<module>bom</module>
+	</modules>
 
 	<!--
         <dependencyManagement>
@@ -53,20 +52,19 @@
         </dependencyManagement>
         -->
 
-        <!-- Mailing lists are a great tool for keeping in touch with people about a project. Most mailing lists are for developers and users. -->
-        <build>
-                <!--  Project version filters -->
-                <!--
+	<!-- Mailing lists are a great tool for keeping in touch with people about a project. Most mailing lists are for developers and users. -->
+	<build>
+		<!--  Project version filters -->
+		<!--
                         Fails if the project doesn't have this file, need to push it down?  Use settings.xml instead.
                         <filters>
                         <filter>project.properties</filter>
                         </filters
                 -->
-                <pluginManagement>
-                        <plugins>
+		<pluginManagement>
+			<plugins>
 
-
-                <!--
+				<!--
                                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
@@ -74,14 +72,14 @@
                                 </plugin>
                                 -->
 
-                        </plugins>
-                </pluginManagement>
-                <!-- Plugin Configuration -->
-                <plugins>
+			</plugins>
+		</pluginManagement>
+		<!-- Plugin Configuration -->
+		<plugins>
 
-                </plugins>
+		</plugins>
 
-                <!--
+		<!--
                 <resources>
                         <resource>
                                 <directory>${basedir}/src/main/resources</directory>
@@ -94,8 +92,8 @@
                                 </includes>
                                 <excludes>
                                         -->
-                                        <!-- Preventing Filtering of Binary Resources -->
-                                        <!--
+		<!-- Preventing Filtering of Binary Resources -->
+		<!--
                                         <exclude>images/**</exclude>
                                 </excludes>
                         </resource>
@@ -103,8 +101,8 @@
                                 <directory>${basedir}/src/main/resources</directory>
                                 <includes>
                                         -->
-                                        <!-- Preventing Filtering of Binary Resources -->
-                                        <!--
+		<!-- Preventing Filtering of Binary Resources -->
+		<!--
                                         <include>images/**</include>
                                         <include>**/*.xml</include>
                                         <include>**/*.properties</include>
@@ -113,8 +111,8 @@
                                 </includes>
                         </resource>
                         -->
-                        <!-- DOES NOT WORK WITH MAVEN ECLIPSE PLUG INS -->
-                        <!--
+		<!-- DOES NOT WORK WITH MAVEN ECLIPSE PLUG INS -->
+		<!--
                         <resource>
                                 <directory>${basedir}/src/main/java</directory>
                                 <includes>
@@ -140,8 +138,8 @@
                                 </includes>
                                 <excludes>
                                         -->
-                                        <!-- Preventing Filtering of Binary Resources -->
-                                        <!--
+		<!-- Preventing Filtering of Binary Resources -->
+		<!--
                                         <exclude>images/**</exclude>
                                 </excludes>
                         </testResource>
@@ -149,8 +147,8 @@
                                 <directory>${basedir}/src/test/resources</directory>
                                 <includes>
                                         -->
-                                        <!-- Preventing Filtering of Binary Resources -->
-                                        <!--
+		<!-- Preventing Filtering of Binary Resources -->
+		<!--
                                         <include>images/**</include>
                                         <include>**/*.xml</include>
                                         <include>**/*.properties</include>
@@ -159,7 +157,7 @@
                                 </includes>
                         </testResource>
                         -->
-                        <!--
+		<!--
                                 <testResource>
                                 <directory>${basedir}/src/webapp/WEB-INF</directory>
                                 <includes>
@@ -171,7 +169,7 @@
                                 </excludes>
                                 </testResource>
                         -->
-                        <!--
+		<!--
                         <testResource>
                                 <directory>${basedir}/src/test/java</directory>
                                 <includes>
@@ -188,6 +186,6 @@
                         </testResource>
                 </testResources>
                 -->
-        </build>
+	</build>
 
 </project>
