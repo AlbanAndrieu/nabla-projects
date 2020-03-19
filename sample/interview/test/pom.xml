@@ -1,73 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-    <parent>
-	    <groupId>com.nabla.project.sample.interview</groupId>
-	    <artifactId>interview</artifactId>
-	    <version>1.0.1-SNAPSHOT</version>
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.nabla.project.sample.interview</groupId>
+		<artifactId>interview</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
 	<groupId>com.nabla.project.sample.interview.test</groupId>
 	<artifactId>test</artifactId>
 	<packaging>jar</packaging>
 	<name>Maven Build Tools Configuration for sample</name>
 	<description>Maven Config - global configurations for sample</description>
-
-	<!-- DEPENDENCIES -->
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-<!-- 			<version>${junit.version}</version> -->
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-<!-- 			<version>${mockito.version}</version> -->
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-<!-- 			<version>${log4j.version}</version> -->
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-	<!-- 		<version>${commons.lang.version}</version> -->
-			<scope>compile</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-<!-- 				<version>${maven.compiler.plugin.version}</version> -->
-				<configuration>
-					<source>${jdkLevel}</source>
-					<target>${jdkLevel}</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-<!-- 				<version>${maven.jar.plugin.version}</version> -->
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.nabla.project.hurrican.Hurrican</mainClass>
-							<addClasspath>true</addClasspath>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 
 	<properties>
 		<!--
@@ -84,5 +29,59 @@
 		<project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
 		-->
 	</properties>
+
+	<!-- DEPENDENCIES -->
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<!-- 			<version>${log4j.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<!-- 		<version>${commons.lang.version}</version> -->
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<!-- 			<version>${junit.version}</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<!-- 			<version>${mockito.version}</version> -->
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<!-- 				<version>${maven.compiler.plugin.version}</version> -->
+				<configuration>
+					<source>${jdkLevel}</source>
+					<target>${jdkLevel}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<!-- 				<version>${maven.jar.plugin.version}</version> -->
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.nabla.project.hurrican.Hurrican</mainClass>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

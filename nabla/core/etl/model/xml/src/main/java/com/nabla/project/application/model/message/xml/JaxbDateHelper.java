@@ -45,7 +45,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author$
  * @version $Revision$
  * @since $Date$
@@ -83,7 +83,7 @@ public class JaxbDateHelper
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param date DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -116,7 +116,7 @@ public class JaxbDateHelper
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param date DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -149,7 +149,7 @@ public class JaxbDateHelper
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param date DOCUMENT ME!
      * @return DOCUMENT ME!
      */

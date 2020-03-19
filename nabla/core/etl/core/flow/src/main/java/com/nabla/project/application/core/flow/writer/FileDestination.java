@@ -49,7 +49,7 @@ import java.util.zip.GZIPOutputStream;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -72,7 +72,7 @@ public class FileDestination implements Destination
 
     /**
      * Creates a new FileDestination object.
-     * 
+     *
      * @param aUrl DOCUMENT ME!
      */
     public FileDestination(String aUrl)
@@ -85,7 +85,7 @@ public class FileDestination implements Destination
 
     /**
      * Creates a new FileDestination object.
-     * 
+     *
      * @param url DOCUMENT ME!
      * @param path DOCUMENT ME!
      */
@@ -99,7 +99,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getUrl()
@@ -111,7 +111,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param aUrl DOCUMENT ME!
      */
     public void setUrl(String aUrl)
@@ -124,7 +124,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param packaging DOCUMENT ME!
      * @return DOCUMENT ME!
      * @throws IOException DOCUMENT ME!
@@ -179,7 +179,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @throws IOException DOCUMENT ME!
      */
     public void close() throws IOException
@@ -198,7 +198,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getPath()
@@ -210,7 +210,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param path DOCUMENT ME!
      */
     public void setPath(String path)
@@ -222,7 +222,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String toString()
@@ -239,7 +239,7 @@ public class FileDestination implements Destination
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param fileName DOCUMENT ME!
      * @return DOCUMENT ME!
      */

@@ -47,7 +47,6 @@ public interface Dictionary
      * Translate Human to Martian.
      *
      * @param aWord any word
-     *
      * @return a string
      */
     String translate(String aWord);

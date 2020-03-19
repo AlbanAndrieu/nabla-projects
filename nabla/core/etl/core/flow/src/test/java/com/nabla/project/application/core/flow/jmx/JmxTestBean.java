@@ -35,7 +35,7 @@ package com.nabla.project.application.core.flow.jmx;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -48,7 +48,7 @@ public class JmxTestBean implements JmxTestBeanMBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public int getAge()
@@ -60,7 +60,7 @@ public class JmxTestBean implements JmxTestBeanMBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param age DOCUMENT ME!
      */
     public void setAge(int age)
@@ -72,7 +72,7 @@ public class JmxTestBean implements JmxTestBeanMBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param name DOCUMENT ME!
      */
     public void setName(String name)
@@ -84,7 +84,7 @@ public class JmxTestBean implements JmxTestBeanMBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public String getName()
@@ -96,7 +96,7 @@ public class JmxTestBean implements JmxTestBeanMBean
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param x DOCUMENT ME!
      * @param y DOCUMENT ME!
      * @return DOCUMENT ME!

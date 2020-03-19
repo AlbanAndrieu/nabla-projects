@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>core</artifactId>
 		<groupId>com.nabla.project.core.etl.core</groupId>
+		<artifactId>core</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.nabla.project.core.etl.core.configuration</groupId>

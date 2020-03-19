@@ -38,7 +38,6 @@ package com.nabla.project.hurrican;
  *
  * @author $Author$
  * @version $Revision$
- *
  * @since $Date$
  */
 public final class VelocityConvertor
@@ -67,7 +66,6 @@ public final class VelocityConvertor
      * Convert Knots to Kilometer per hour.
      *
      * @param aSpeedKnots speed knots
-     *
      * @return speed in Kilometer per hour
      */
     public static float knotsToKmph(final float aSpeedKnots)

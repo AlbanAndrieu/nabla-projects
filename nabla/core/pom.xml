@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>nabla</artifactId>
 		<groupId>com.nabla.project</groupId>
+		<artifactId>nabla</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.nabla.project.core</groupId>

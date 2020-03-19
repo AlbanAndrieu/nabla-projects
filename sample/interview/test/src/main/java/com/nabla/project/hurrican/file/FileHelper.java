@@ -43,7 +43,6 @@ import com.nabla.project.hurrican.VelocityConvertor;
  *
  * @author $Author$
  * @version $Revision$
- *
  * @since $Date$
  */
 public final class FileHelper
@@ -76,7 +75,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param data DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getCard(final String data)
@@ -90,7 +88,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param data DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getDate(final String data)
@@ -104,7 +101,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param date DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getYear(final String date)
@@ -118,7 +114,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param data DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getRecord(final String data)
@@ -132,7 +127,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param data DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getNumber(final String data)
@@ -146,7 +140,6 @@ public final class FileHelper
      * DOCUMENT ME!
      *
      * @param data DOCUMENT ME!
-     *
      * @return DOCUMENT ME!
      */
     public static String getName(final String data)
@@ -161,7 +154,6 @@ public final class FileHelper
      *
      * @param season a season
      * @param dataIn a data as a Reader
-     *
      * @throws IOException do not forget to close the reader in a finally
      */
     public static void printData(final String season, final BufferedReader dataIn) throws IOException
@@ -202,7 +194,6 @@ public final class FileHelper
      *
      * @param record number of record to parse
      * @param dataIn a data as a Reader
-     *
      * @throws IOException do not forget to close the reader in a finally
      */
     public static void printMaxWind(final Integer record, final BufferedReader dataIn) throws IOException
