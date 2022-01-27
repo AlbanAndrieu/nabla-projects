@@ -35,7 +35,7 @@ package com.nabla.project.string;
 
 /**
  * DOCUMENT ME!
- *
+ * 
  * @author $Author$
  * @version $Revision$
  * @since $Date$
@@ -45,7 +45,7 @@ public interface Dictionary
 
     /**
      * Translate Human to Martian.
-     *
+     * 
      * @param aWord any word
      * @return a string
      */

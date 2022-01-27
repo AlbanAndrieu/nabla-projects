@@ -40,7 +40,7 @@ import com.nabla.project.hurrican.VelocityConvertor;
 
 /**
  * Specific Helper for the test format.
- *
+ * 
  * @author $Author$
  * @version $Revision$
  * @since $Date$
@@ -73,7 +73,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param data DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -86,7 +86,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param data DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -99,7 +99,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param date DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -112,7 +112,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param data DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -125,7 +125,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param data DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -138,7 +138,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param data DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -151,7 +151,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param season a season
      * @param dataIn a data as a Reader
      * @throws IOException do not forget to close the reader in a finally
@@ -191,7 +191,7 @@ public final class FileHelper
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param record number of record to parse
      * @param dataIn a data as a Reader
      * @throws IOException do not forget to close the reader in a finally

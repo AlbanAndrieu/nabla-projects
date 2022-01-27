@@ -11,7 +11,6 @@
 	<artifactId>nabla</artifactId>
 	<packaging>pom</packaging>
 	<name>Nabla</name>
-	<!-- This element provides a basic description of your project -->
 	<description>Nabla project</description>
 	<modules>
 		<!--<module>frontend</module>-->

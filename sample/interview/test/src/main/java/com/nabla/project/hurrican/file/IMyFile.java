@@ -37,7 +37,7 @@ import java.io.Serializable;
 
 /**
  * DOCUMENT ME!
- *
+ * 
  * @author $Author$
  * @version $Revision$
  * @since $Date$
@@ -47,21 +47,21 @@ public interface IMyFile extends Serializable
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @throws Exception DOCUMENT ME!
      */
     void printTest() throws Exception;
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @return DOCUMENT ME!
      */
     String getUrl();
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @return DOCUMENT ME!
      */
     String getPath();

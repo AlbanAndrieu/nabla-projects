@@ -60,7 +60,7 @@ import java.util.Set;
 
 /**
  * DOCUMENT ME!
- *
+ * 
  * @author $Author: albandri $
  * @version $Revision: 358 $
  * @since $Date: 2010-09-16 01:11:04 +0200 (jeu., 16 sept. 2010) $
@@ -72,7 +72,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param perimeter DOCUMENT ME!
      * @param id DOCUMENT ME!
      * @param output DOCUMENT ME!
@@ -290,7 +290,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param exceptionQueueName DOCUMENT ME!
      * @param requestId DOCUMENT ME!
      */
@@ -321,7 +321,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param status DOCUMENT ME!
      */
     public void recoverRequest(RequestStatus status)
@@ -333,7 +333,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param f DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -346,7 +346,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param outputDestination DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -359,7 +359,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param p DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -374,7 +374,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param p DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -387,7 +387,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @param statusDestination DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -400,7 +400,7 @@ public class NablaExtractServiceSample extends ExtractServiceCommon implements N
 
     /**
      * DOCUMENT ME!
-     *
+     * 
      * @return DOCUMENT ME!
      */
     public String getExtractServiceId()
