@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>nabla</module>
+		<module>sample</module>
 	</modules>
 
 	<scm>
